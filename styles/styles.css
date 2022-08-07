@@ -1,0 +1,679 @@
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	color: darkgray;
+	background-color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+
+}
+
+.nav_title ul {
+	padding: 0;
+	list-style: none;
+}
+
+.nav_sections ul {
+	padding: 0;
+	list-style: none;
+}
+
+
+.title {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-end;
+	}
+
+.title1 {
+	margin-left: 200px;
+	display: inline;
+	width: 50%;
+}
+
+
+.nav_sections {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	justify-content: flex-end;
+	column-gap: 10px;
+	width: 50%;
+	margin-right: 100px;
+
+}
+
+.nav_sections li {
+	display: inline;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+
+a {
+	color: inherit
+}
+
+a:hover {
+	color: #5b276b;
+	text-decoration: none;
+}
+
+
+/* MAIN */
+
+.main {
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+.content p {
+	line-height: 20px;
+	color: #7b727f;
+}
+
+
+
+/* PRODUCTS SECTION */
+
+
+h2 {
+	text-align: left;
+	margin-left: 120px;
+	margin-bottom: 50px;
+}
+
+
+.grid {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: "grid1 grid2"
+	                     "grid3 grid4"
+
+}
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 150px;
+	row-gap: 30px;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+
+.grid img {
+	background-color: black;
+	border: 3px solid #2b262d;
+	margin-bottom: 10px;
+}
+
+.grid1 {
+	grid-area: bread;
+}
+
+.grid2 {
+	grid-area: pastries;
+}
+
+.grid3 {
+	grid-area: sandwiches;
+}
+
+.grid4 {
+	grid-area: cookies;
+}
+
+
+.grid a {
+	color: #2b262d;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+
+.grid a:hover {
+	color: #5b276b;
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	margin-top: 200px;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 250px;
+	list-style: none
+}
+
+.social a {
+	color: darkgray;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+
+.address li {
+	margin-right: 250px;
+	list-style: none
+}
+
+.copy li {
+	text-align: center;
+	list-style: none
+}
+
+
+
+/* PAGE: ABOUT US */
+
+
+.story h2 {
+	display: inline;
+}
+
+ .story h2 {
+	text-align: left;
+	margin-left: 350px;	
+}
+
+
+.text_story {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	margin-top: 50px;
+	margin-bottom: 80px;
+} 
+
+.text_story .story {
+	margin-left: 200px;
+	width: 30%;
+	line-height: 30px;
+	text-align: right;
+	margin-right:50px;
+
+}
+
+.text_story .p_img img {
+	width: 80%;
+	margin-left: 0%;
+	margin-right: 50px;
+	border: 3px solid #2b262d;
+}
+
+
+.chef {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+}
+
+.chef .chef_img img {
+	width: 80%;
+	margin-top: 30px;
+	margin-left: 40%;
+	margin-right: 10px;
+	border: 3px solid #2b262d;
+}
+
+.chef .chef_story {
+	margin-left: 150px;
+	width: 30%;
+	line-height: 30px;
+	margin-right:70px;
+}
+
+
+/* PAGE: ORDER */
+
+.text1, 
+.text2 ,
+.text3, 
+.text4 {
+	width: 80%;
+	text-align: center;
+	margin-left: 200px;
+	line-height: 30px;
+	margin-right:250px;
+}
+
+
+.text_ap h3 {
+	text-align: center;
+}
+
+
+.apps li {
+	display: inline;
+
+}
+
+.da p {
+	display: inline;
+	text-align: left;
+	margin-left: 200px;
+}
+
+
+.apps {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	row-gap: 10px;
+	width: 100%;
+}
+
+.apps1,
+.apps2 {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* PAGE: LOCATION */
+
+.main h2 {
+	text-align: left;
+	margin-left: 200px;
+}
+
+.text_location {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	
+}
+
+.text_location .location{
+	justify-content: flex-start;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.text_location .map {
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.text_location li{
+	margin-bottom: 20px;
+}
+
+.location p {
+	line-height: 20px;
+}
+
+
+.form {
+	text-align: center;
+}
+
+
+
+
+/* SECTION:  BREADS */
+
+.grid_breads {  
+	width: 80%;
+	margin: auto;
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+ 	grid-template-rows: 1fr 1fr 1fr 1fr;
+ 	grid-auto-flow: row;
+ 	grid-column-gap: 10px;
+ 	grid-row-gap: 50px;
+ 	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+  	grid-template-areas:
+    "b1 b2"
+    "b3 b4"
+    "b5 b6"
+    "b7 b8";
+}
+
+.grid_breads img {
+	background-color: black;
+	border: 3px solid #2b262d;
+}
+
+.b1 { 
+	grid-area: b1;
+}
+
+.b2 { 
+	grid-area: b2; 
+}
+
+.b3 { 
+	grid-area: b3;
+}
+
+.b4 { 
+	grid-area: b4;
+}
+
+.b5 {
+	 grid-area: b5;
+ }
+
+.b6 { 
+	grid-area: b6; 
+}
+
+.b7 { 
+	grid-area: b7;
+ }
+
+.b8 { 
+	grid-area: b8; 
+}
+
+
+
+/* SECTION:  PASTRIES */
+
+.grid_pastries {  
+	width: 80%;
+	margin: auto;
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+ 	grid-template-rows: 1fr 1fr 1fr 1fr;
+ 	grid-auto-flow: row;
+ 	grid-column-gap: 10px;
+ 	grid-row-gap: 50px;
+ 	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+  	grid-template-areas:
+    "p1 p2"
+    "p3 p4"
+    "p5 p6"
+    "p7 p8";
+}
+
+.grid_pastries img {
+	background-color: black;
+	border: 3px solid #2b262d;
+}
+
+.p1 { 
+	grid-area: p1;
+}
+
+.p2 { 
+	grid-area: p2; 
+}
+
+.p3 { 
+	grid-area: p3;
+}
+
+.p4 { 
+	grid-area: p4;
+}
+
+.p5 {
+	 grid-area: p5;
+ }
+
+.p6 { 
+	grid-area: p6; 
+}
+
+.p7 { 
+	grid-area: p7;
+ }
+
+.p8 { 
+	grid-area: p8; 
+}
+
+
+/* SECTION: SANDWICHES */
+
+.grid_sandwiches {  
+	width: 80%;
+	margin: auto;
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+ 	grid-template-rows: 1fr 1fr 1fr 1fr;
+ 	grid-auto-flow: row;
+ 	grid-column-gap: 10px;
+ 	grid-row-gap: 50px;
+ 	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+  	grid-template-areas:
+    "s1 s2"
+    "s3 s4"
+    "s5 s6"
+    "s7 s8";
+}
+
+.grid_sandwiches img {
+	background-color: black;
+	border: 3px solid #2b262d;
+}
+
+.s1 { 
+	grid-area: s1;
+}
+
+.s2 { 
+	grid-area: s2; 
+}
+
+.s3 { 
+	grid-area: s3;
+}
+
+.s4 { 
+	grid-area: s4;
+}
+
+.s5 {
+	 grid-area: s5;
+ }
+
+.s6 { 
+	grid-area: s6; 
+}
+
+.s7 { 
+	grid-area: s7;
+ }
+
+.s8 { 
+	grid-area: s8; 
+}
+
+
+
+/* SECTION: COOKIES */
+
+.grid_cookies {  
+	width: 80%;
+	margin: auto;
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+ 	grid-template-rows: 1fr 1fr 1fr 1fr;
+ 	grid-auto-flow: row;
+ 	grid-column-gap: 10px;
+ 	grid-row-gap: 50px;
+ 	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+  	grid-template-areas:
+    "c1 c2"
+    "c3 c4"
+    "c5 c6"
+    "c7 c8";
+}
+
+.grid_cookies img {
+	background-color: black;
+	border: 3px solid #2b262d;
+}
+
+.c1 { 
+	grid-area: c1;
+}
+
+.c2 { 
+	grid-area: c2; 
+}
+
+.c3 { 
+	grid-area: c3;
+}
+
+.c4 { 
+	grid-area: c4;
+}
+
+.c5 {
+	 grid-area: c5;
+ }
+
+.c6 { 
+	grid-area: c6; 
+}
+
+.c7 { 
+	grid-area: c7;
+ }
+
+.c8 { 
+	grid-area: c8; 
+}
+
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+	.title1 {
+		display: inline
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	.nav_sections {
+		margin-right: 30px;
+	}
+
+	.main {
+		margin-left: 30px;
+	}
+
+	.main .img {
+		width: 100;
+		height: 100%;
+	}
+
+	h2 {
+		margin-left: 30px;
+	}
+
+	.grid {
+		margin-left: 30px;
+	}
+
+	.social {
+		margin-right: 30px;
+	}
+
+	.address li {
+		margin-right: 30px;
+	}
+
+	.footer {
+		margin-top: 100px;
+	}
+}
+
+
+
+/* TABLET */
+
+@media only screen and (min-width: 481px) and (max-width: 990px) {
+
+	.title1 {
+		margin-left: 100px;
+	}
+
+	.main {
+		margin-left: 60px;
+	}
+
+	h2 {
+		margin-left: 60px;
+	}
+	.grid img {
+		margin-right: 100px;
+	}
+
+	.social {
+		margin-right: 100px;
+	}
+
+	.address li {
+		margin-right: 100px;
+	}
+
+}
+
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+}
