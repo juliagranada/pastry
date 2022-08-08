@@ -363,7 +363,7 @@ h2 {
 
 .main h2 {
 	text-align: left;
-	margin-left: 200px;
+	margin-left: 120px;
 }
 
 .text_location {
@@ -377,14 +377,14 @@ h2 {
 
 .text_location .location{
 	justify-content: flex-start;
-	margin-left: 200px;
+	margin-left: 120px;
 	margin-right: 200px;
 }
 
 .text_location .map {
+	width: 100%;
 	margin-top: 50px;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 120px;
 }
 
 .text_location li{
@@ -400,7 +400,11 @@ h2 {
 	text-align: center;
 }
 
+/*.map {
+	margin-left: 30%;
+	margin-right: 30%;
 
+}*/
 
 
 /* SECTION:  BREADS */
