@@ -347,7 +347,6 @@ h3 {
 	list-style: none;
 	color: #2b262d;
 	font-size: 20px;
-	text-decoration: none;
 	text-transform: uppercase;
 
 }
@@ -356,6 +355,7 @@ h3 {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
+	line-height: 30px
 }
 
 .grid_breads {  
@@ -418,6 +418,13 @@ h3 {
 
 /* SECTION:  PASTRIES */
 
+.pastry_description {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 50px;
+	line-height: 30px
+}
+
 .grid_pastries {  
 	width: 80%;
 	margin: auto;
@@ -476,6 +483,13 @@ h3 {
 
 
 /* SECTION: SANDWICHES */
+
+.sandwich_description {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 50px;
+	line-height: 30px
+}
 
 .grid_sandwiches {  
 	width: 80%;
@@ -536,6 +550,13 @@ h3 {
 
 
 /* SECTION: COOKIES */
+
+.cookie_description {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 50px;
+	line-height: 30px
+}
 
 .grid_cookies {  
 	width: 80%;
