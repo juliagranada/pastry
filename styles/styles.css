@@ -181,7 +181,9 @@ h2 {
 	color: #5b276b;
 }
 
-
+.container {
+	margin-top: 300px;
+}
 
 
 
@@ -254,7 +256,6 @@ h2 {
 
 
 
-
 /* PAGE: ORDER */
 
 .text1, 
@@ -276,7 +277,9 @@ h2 {
 	margin-left: 120px
 }
 
-
+.container_2 {
+	margin-left: 600px;
+}
 
 
 
@@ -336,6 +339,24 @@ h3 {
 }
 
 /* SECTION:  BREADS */
+
+
+.back {
+	margin-left: 120px;
+	margin-top: 50px;
+	list-style: none;
+	color: #2b262d;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+.bread_description {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 50px;
+}
 
 .grid_breads {  
 	width: 80%;
