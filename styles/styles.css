@@ -104,25 +104,10 @@ a:hover {
 .content p {
 	line-height: 20px;
 	color: #7b727f;
+	margin-top: 20px;
 }
 
 
-
-
-/* MAIN */
-
-.main {
-	display: flex;
-	width: 80%;
-	flex-direction: column;
-	margin-left: 120px;
-	margin-right: 120px;
-}
-
-.content p {
-	line-height: 20px;
-	color: #7b727f;
-}
 
 
 
@@ -196,43 +181,6 @@ h2 {
 }
 
 
-
-
-/* FOOTER */
-
-
-.footer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	text-align: right;
-	margin-top: 200px;
-}
-
-.social {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin-right: 250px;
-	list-style: none
-}
-
-.social a {
-	color: darkgray;
-	margin-left: 30px;
-	margin-top: 50px;
-}
-
-
-.address li {
-	margin-right: 250px;
-	list-style: none
-}
-
-.copy li {
-	text-align: center;
-	list-style: none
-}
 
 
 
@@ -402,11 +350,6 @@ h2 {
 	text-align: center;
 }
 
-/*.map {
-	margin-left: 30%;
-	margin-right: 30%;
-
-}*/
 
 
 /* SECTION:  BREADS */
@@ -693,6 +636,7 @@ h2 {
 		margin-top: 100px;
 	}
 }
+
 
 
 
