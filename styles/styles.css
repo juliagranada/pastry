@@ -190,7 +190,6 @@ h2 {
 
 .story h2 {
 	display: inline;
-	margin-top: 50px;
 }
 
  .story h2 {
@@ -325,6 +324,16 @@ h2 {
 }
 
 
+/* PAGE: CONTACT */
+
+h3 {
+	margin-left: 120px;
+	margin-top: 60px;
+}
+
+.form {
+	margin-top: 50px;
+}
 
 /* SECTION:  BREADS */
 
