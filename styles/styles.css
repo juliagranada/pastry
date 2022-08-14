@@ -351,15 +351,22 @@ h3 {
 /* SECTION:  BREADS */
 
 
-.back {
+.back a {
+	display: inline-block;
 	margin-left: 120px;
-	margin-top: 50px;
-	list-style: none;
+	margin-top: 100px;
 	color: #2b262d;
 	font-size: 20px;
+	text-decoration: none;
 	text-transform: uppercase;
 
 }
+
+.back a:hover {
+	color: #5b276b;
+}
+
+
 
 .bread_description {
 	margin-left: 120px;
