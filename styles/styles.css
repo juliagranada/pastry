@@ -774,6 +774,10 @@ h3 {
 	margin-left: 0px;
 }
 
+.greeting h3 {
+	margin-left: 30px;
+}
+
 
 
 }
@@ -922,6 +926,10 @@ h3 {
 .text_location li{
 	margin-bottom: 20px;
 	margin-left: 0px;
+}
+
+.greeting h3 {
+	margin-left: 30px;
 }
 
 }
