@@ -251,6 +251,18 @@ h2 {
 }
 
 
+/* PAGE: MENU */
+
+.menu dt {
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+.menu dd {
+	margin-left: 180px;
+}
+
+
 
 /* PAGE: ORDER */
 
@@ -778,6 +790,14 @@ h3 {
 	margin-left: 30px;
 }
 
+.menu dt {
+	margin-left: 20px;
+}
+
+.menu dd {
+	margin-left: 50px;
+}
+
 
 
 }
@@ -930,6 +950,14 @@ h3 {
 
 .greeting h3 {
 	margin-left: 30px;
+}
+
+.menu dt {
+	margin-left: 60px;
+}
+
+.menu dd {
+	margin-left: 80px;
 }
 
 }
