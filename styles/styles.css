@@ -816,8 +816,8 @@ h3 {
 
 .back a {
 	display: inline-block;
-	margin-left: 120px;
-	margin-top: 100px;
+	margin-left: 20px;
+	margin-top: 40px;
 	color: #2b262d;
 	font-size: 20px;
 	text-decoration: none;
@@ -846,7 +846,6 @@ h3 {
 }
 
 
-
 .grid_pastries {  
 	width: 90%;
 	display: flex;
@@ -867,10 +866,6 @@ h3 {
 	margin-top: 20px;
 }
 
-.back a {
-	margin-top: 40px;
-	margin-left: 20px;
-}
 
 .grid_cookies {  
 	width: 90%;
@@ -890,10 +885,6 @@ h3 {
 	margin-top: 20px;
 }
 
-.back a {
-	margin-top: 40px;
-	margin-left: 20px;
-}
 
 .grid_sandwiches {  
 	width: 90%;
