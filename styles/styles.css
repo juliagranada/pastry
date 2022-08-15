@@ -348,6 +348,18 @@ h3 {
 	margin-top: 50px;
 }
 
+form p {
+	padding: 5px 0;
+}
+
+form input,
+textarea {
+	width: 30%;
+}
+
+
+
+
 /* SECTION:  BREADS */
 
 
