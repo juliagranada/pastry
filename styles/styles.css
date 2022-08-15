@@ -386,7 +386,7 @@ h3 {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 250px;
+	margin-left: 200px;
   	grid-template-areas:
     "b1 b2"
     "b3 b4"
@@ -453,7 +453,7 @@ h3 {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 250px;
+	margin-left: 200px;
   	grid-template-areas:
     "p1 p2"
     "p3 p4"
@@ -519,7 +519,7 @@ h3 {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 250px;
+	margin-left: 200px;
   	grid-template-areas:
     "s1 s2"
     "s3 s4"
@@ -586,7 +586,7 @@ h3 {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 250px;
+	margin-left: 200px;
   	grid-template-areas:
     "c1 c2"
     "c3 c4"
@@ -805,11 +805,106 @@ h3 {
 	margin-left: 50px;
 }
 
+.bread_description {
+	display: inline;
+}
 
+.bread_description h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	display: inline-block;
+	margin-left: 120px;
+	margin-top: 100px;
+	color: #2b262d;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
 
 }
 
+.grid_breads {  
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+ 	grid-row-gap: 30px;
+ 	grid-column-gap: 30px;
+ 	
+}
 
+
+.pastry_description {
+	display: inline;
+}
+
+.pastry_description h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+
+.grid_pastries {  
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+ 	grid-row-gap: 30px;
+ 	grid-column-gap: 30px;
+	
+}
+
+
+.cookie_description {
+	display: inline;
+}
+
+.cookie_description h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_cookies {  
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+ 	grid-row-gap: 30px;
+ 	grid-column-gap: 30px;
+}
+
+.sandwich_description {
+	display: inline;
+}
+
+.sandwich_description h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_sandwiches {  
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+ 	grid-row-gap: 30px;
+ 	grid-column-gap: 30px;
+}
+
+}
 
 
 
@@ -965,6 +1060,90 @@ h3 {
 
 .menu dd {
 	margin-left: 80px;
+}
+
+.bread_description {
+	display: inline;
+}
+
+.bread_description h3 {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_breads {
+	margin-left: 5px;
+	margin-top: 30px;
+	grid-row-gap: 30px;
+}
+
+.pastry_description {
+	display: inline;
+}
+
+.pastry_description h3 {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_pastries {
+	margin-left: 5px;
+	margin-top: 30px;
+	grid-row-gap: 30px;
+}
+
+.cookie_description {
+	display: inline;
+}
+
+.cookie_description h3 {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_cookies {
+	margin-left: 5px;
+	margin-top: 30px;
+	grid-row-gap: 30px;
+}
+
+.sandwich_description {
+	display: inline;
+}
+
+.sandwich_description h3 {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.back a {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.grid_sandwiches {
+	margin-left: 5px;
+	margin-top: 30px;
+	grid-row-gap: 30px;
 }
 
 }
