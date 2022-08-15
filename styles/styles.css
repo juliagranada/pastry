@@ -358,6 +358,10 @@ textarea {
 	margin-bottom: 10px;
 }
 
+form textarea {
+	height: 150px
+}
+
 
 /* SECTION:  BREADS */
 
