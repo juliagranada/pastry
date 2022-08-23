@@ -109,6 +109,7 @@ home_title h1 {
   margin-top: 100px;
   margin-left: 350px; }
 
+/* MIXIN */
 .text_story {
   display: flex;
   flex-direction: row;
