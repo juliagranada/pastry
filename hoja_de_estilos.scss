@@ -87,7 +87,7 @@ a:hover {
 
 /* PRODUCTS SECTION */
 
-h2 {
+home_title h1 {
 	text-align: $h2_align;
 	margin-left: 120px;
 	margin-top: 40px;
@@ -146,7 +146,7 @@ h2 {
 
 /* PAGE: ABOUT */
 
-.story h2 {
+.story h1 {
 	text-align: $h2_align;
 	margin-top: 100px;
 	margin-left: 350px;	
@@ -208,6 +208,13 @@ h2 {
 
 /* PAGE: MENU */
 
+.title_menu h1 {
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 150px;
+	text-decoration: underline;	
+}
+
 .menu 
 	dt {
 		margin-top: 50px;
@@ -219,6 +226,14 @@ h2 {
 }
 
 /* PAGE: ORDER */
+
+.title_order h1 {
+	text-align: $h2_align;
+	margin-top: 50px;
+	margin-left: 150px;
+	text-decoration: underline;	
+}
+
 
 .text1, 
 .text2 ,
@@ -245,9 +260,10 @@ h2 {
 
 /* PAGE: LOCATION */
 
-.main h2 {
+.title_location h1 {
 	text-align: $h2_align;
 	margin-left: 120px;
+	margin-top: 50px;
 }
 
 .text_location {
@@ -288,9 +304,17 @@ h2 {
 
 /* PAGE: CONTACT */
 
-h3 {
+.title_contact h1 {
 	margin-left: 120px;
+	margin-right: 50px;
 	margin-top: 60px;
+	text-decoration: underline;
+}
+
+.text_contact h2 {
+	margin-left: 120px;
+	margin-right: 50px;
+	margin-top: 10px;
 }
 
 .form {
