@@ -152,7 +152,7 @@ home_title h1 {
 	margin-left: 350px;	
 }
 
-.text_story {
+@mixin flex {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -160,6 +160,10 @@ home_title h1 {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
+}
+
+.text_story {
+	@include flex;
 	margin-top: 50px;
 	margin-bottom: 80px;
 
@@ -181,13 +185,7 @@ home_title h1 {
 }
 
 .chef {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	width: 100%;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
+	@include flex;
 
 	.chef_story {
 		margin-left: 150px;
@@ -209,7 +207,7 @@ home_title h1 {
 /* PAGE: MENU */
 
 .title_menu h1 {
-	text-align: left;
+	text-align: $h2_align;
 	margin-top: 50px;
 	margin-left: 150px;
 	text-decoration: underline;	
