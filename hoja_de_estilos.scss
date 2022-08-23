@@ -1,15 +1,6 @@
-
-body {
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	color: darkgray;
-	background-color: black;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 400;
-	background: rgb(0,0,0);
-	background: linear-gradient(108deg, rgba(0,0,0,1) 43%, rgba(10,2,29,1) 69%, rgba(7,3,38,1) 100%);
-}
+$h2_align: left;
+$color_hover: #5b276b;
+$border_image: 3px solid #2b262d;
 
 
 .nav_title ul {
@@ -17,21 +8,43 @@ body {
 	list-style: none;
 }
 
+.nav_sections {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	justify-content: flex-end;
+	column-gap: 10px;
+	width: 80%;
+	margin-right: 160px;
 
-.nav_sections a {
-	color: #2b262d;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
+	a {
+		color: #2b262d;
+		font-size: 20px;
+		text-decoration: none;
+		text-transform: uppercase;
 
+		color: $color_hover;
+ 		transition-property: color;
+  		transition-duration: 1s;
+  		transition-timing-function: ease-in;
+  		transition-delay: 0s;
+
+	a:hover {
+		color: $color_hover;
+
+		color: #2b262d;
+
+	li {
+		display: inline;
+		text-decoration: none;
+		text-transform: uppercase;
+
+			}
+
+		}
+
+	}
 }
-
-.nav_sections a:hover {
-	color: #5b276b;
-
-}
-
-
 
 .title {
 	display: flex;
@@ -46,50 +59,14 @@ body {
 	width: 50%;
 }
 
-
-.nav_sections {
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: flex-end;
-	justify-content: flex-end;
-	column-gap: 10px;
-	width: 80%;
-	margin-right: 160px;
-
-}
-
-.nav_sections li {
-	display: inline;
-	text-decoration: none;
-	text-transform: uppercase;
-	
-}
-
 a {
-	color: inherit
+	color: inherit;
 }
 
 a:hover {
-	color: #5b276b;
+	color: $color_hover;
 	text-decoration: none;
 }
-
-
-/* TRANSITION */
-
-.nav_sections a {
-  color: #5b276b;
-  transition-property: color;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-  transition-delay: 0s;
-}
-
-.nav_sections a:hover{
-  color: #2b262d;
-}
-
-
 
 /* MAIN */
 
@@ -108,29 +85,15 @@ a:hover {
 	margin-top: 20px;
 }
 
-
-
 /* PRODUCTS SECTION */
 
-
 h2 {
-	text-align: left;
+	text-align: $h2_align;
 	margin-left: 120px;
 	margin-top: 40px;
 	margin-bottom: 50px;
 }
 
-
-/*.grid {
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 300px 300px;
-	grid-template-areas: "grid1 grid2"
-	                     "grid3 grid4"
-
-}*/
 
 .grid {
 	display: flex;
@@ -141,14 +104,24 @@ h2 {
 	flex-wrap: wrap;
 	align-items: center;
 	margin-left: 120px;
-	margin-right: 250px;
-}
+	margin-right: 250px; 
 
+	img {
+		background-color: black;
+		border: $border_image;
+		margin-bottom: 10px;
 
-.grid img {
-	background-color: black;
-	border: 3px solid #2b262d;
-	margin-bottom: 10px;
+	a {
+		color: #2b262d;
+		font-size: 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+	a:hover {
+		color: #5b276b;
+			}
+		}
+	}
 }
 
 .grid1 {
@@ -167,34 +140,17 @@ h2 {
 	grid-area: cookies;
 }
 
-
-.grid a {
-	color: #2b262d;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-	
-}
-
-.grid a:hover {
-	color: #5b276b;
-}
-
 .container {
 	margin-top: 300px;
 }
 
-
-
 /* PAGE: ABOUT */
 
-
- .story h2 {
-	text-align: left;
+.story h2 {
+	text-align: $h2_align;
 	margin-top: 100px;
 	margin-left: 350px;	
 }
-
 
 .text_story {
 	display: flex;
@@ -206,24 +162,23 @@ h2 {
 	font-weight: 300;
 	margin-top: 50px;
 	margin-bottom: 80px;
-} 
 
-.text_story .story {
-	margin-left: 200px;
-	width: 30%;
-	line-height: 30px;
-	text-align: right;
-	margin-right:50px;
+	.story {
+		margin-left: 200px;
+		width: 30%;
+		line-height: 30px;
+		text-align: right;
+		margin-right:50px;
 
+	.p_img 
+		img {
+			width: 80%;
+			margin-left: 0%;
+			margin-right: 50px;
+			border: $border_image;
+		}
+	}
 }
-
-.text_story .p_img img {
-	width: 80%;
-	margin-left: 0%;
-	margin-right: 50px;
-	border: 3px solid #2b262d;
-}
-
 
 .chef {
 	display: flex;
@@ -233,40 +188,39 @@ h2 {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-}
 
-.chef .chef_img img {
-	width: 80%;
-	margin-top: 30px;
-	margin-left: 40%;
-	margin-right: 10px;
-	border: 3px solid #2b262d;
-}
+	.chef_story {
+		margin-left: 150px;
+		width: 30%;
+		line-height: 30px;
+		margin-right:70px;
 
-.chef .chef_story {
-	margin-left: 150px;
-	width: 30%;
-	line-height: 30px;
-	margin-right:70px;
+	.chef_img 
+		img {
+			width: 80%;
+			margin-top: 30px;
+			margin-left: 40%;
+			margin-right: 10px;
+			border: $border_image;
+		}
+	}
 }
-
 
 /* PAGE: MENU */
 
-.menu dt {
-	margin-top: 50px;
-	margin-left: 150px;
+.menu 
+	dt {
+		margin-top: 50px;
+		margin-left: 150px;
+
+	dd {
+		margin-left: 180px;
+	}
 }
-
-.menu dd {
-	margin-left: 180px;
-}
-
-
 
 /* PAGE: ORDER */
 
-/.text1, 
+.text1, 
 .text2 ,
 .text3, 
 .text4 {
@@ -277,24 +231,22 @@ h2 {
 
 
 .text_ap h3 {
-	margin-left: 120px
+	margin-left: 120px;
 }
 
 
 .da {
-	margin-left: 120px
+	margin-left: 120px;
 }
 
 .container_2 {
 	margin-left: 550px;
 }
 
-
-
 /* PAGE: LOCATION */
 
 .main h2 {
-	text-align: left;
+	text-align: $h2_align;
 	margin-left: 120px;
 }
 
@@ -304,38 +256,35 @@ h2 {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-	
-}
 
-.text_location .location{
-	justify-content: flex-start;
-	margin-left: 120px;
-	margin-right: 200px;
-}
+	.location {
+		justify-content: flex-start;
+		margin-left: 120px;
+		margin-right: 200px;
 
-.location h3 {
-	margin-left: 0px;
-}
+		h3 {
+			margin-left: 0px;
 
-.text_location .map {
-	width: 100%;
-	margin-top: 50px;
-	margin-left: 120px;
-}
+	.map {
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 120px;
 
-.text_location li{
-	margin-bottom: 20px;
-}
+	li {
+		margin-bottom: 20px;
 
-.location p {
-	line-height: 20px;
+	p {
+		line-height: 20px;
+	}
+	}
+	}
+		}
+	}
 }
-
 
 .form {
 	text-align: center;
 }
-
 
 /* PAGE: CONTACT */
 
@@ -348,40 +297,37 @@ h3 {
 	margin-top: 50px;
 }
 
-form p {
+form 
+	p {
 	padding: 5px 0;
-}
 
-form input,
-textarea {
-	width: 40%;
-	margin-bottom: 20px;
-}
+	textarea {
+		height: 150px;
 
-form textarea {
-	height: 150px
+	input,
+		textarea {
+			width: 40%;
+			margin-bottom: 20px;
+		}
+	}
 }
-
 
 /* SECTION:  BREADS */
 
+.back 
+	a {
+		display: inline-block;
+		margin-left: 120px;
+		margin-top: 100px;
+		color: #2b262d;
+		font-size: 20px;
+		text-decoration: none;
+		text-transform: uppercase;
 
-.back a {
-	display: inline-block;
-	margin-left: 120px;
-	margin-top: 100px;
-	color: #2b262d;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-
+	a:hover {
+		color: $color_hover;
+	}
 }
-
-.back a:hover {
-	color: #5b276b;
-}
-
-
 
 .bread_description {
 	margin-left: 120px;
@@ -407,11 +353,11 @@ form textarea {
     "b3 b4"
     "b5 b6"
     "b7 b8";
-}
 
-.grid_breads img {
-	background-color: black;
-	border: 3px solid #2b262d;
+    img {
+		background-color: black;
+		border: $border_image;
+	}
 }
 
 .b1 { 
@@ -446,8 +392,6 @@ form textarea {
 	grid-area: b8; 
 }
 
-
-
 /* SECTION:  PASTRIES */
 
 .pastry_description {
@@ -474,11 +418,11 @@ form textarea {
     "p3 p4"
     "p5 p6"
     "p7 p8";
-}
 
-.grid_pastries img {
-	background-color: black;
-	border: 3px solid #2b262d;
+    img {
+		background-color: black;
+		border: $border_image;
+	}
 }
 
 .p1 { 
@@ -520,7 +464,7 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
 }
 
 .grid_sandwiches {  
@@ -540,11 +484,11 @@ form textarea {
     "s3 s4"
     "s5 s6"
     "s7 s8";
-}
 
-.grid_sandwiches img {
-	background-color: black;
-	border: 3px solid #2b262d;
+    img {
+		background-color: black;
+		border: $border_image;
+	}
 }
 
 .s1 { 
@@ -587,7 +531,7 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
 }
 
 .grid_cookies {  
@@ -607,11 +551,11 @@ form textarea {
     "c3 c4"
     "c5 c6"
     "c7 c8";
-}
 
-.grid_cookies img {
-	background-color: black;
-	border: 3px solid #2b262d;
+    img {
+		background-color: black;
+		border: $border_image;
+	}
 }
 
 .c1 { 
@@ -646,13 +590,11 @@ form textarea {
 	grid-area: c8; 
 }
 
-
 /* MEDIA QUERIES */
 
 /* MOBILE */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-
 
 	.title1 {
 		display: inline;
@@ -688,35 +630,34 @@ form textarea {
 		margin-top: 100px;
 	}
 
-.text_story {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 90%;
-	margin-left: 20px;
-	margin-right: 10px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
-	margin-top: 50px;
-	margin-bottom: 80px;
-} 
+	.text_story {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 10px;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		margin-top: 50px;
+		margin-bottom: 80px;	
 
-.text_story .story {
-	margin-left: 10px;
-	width: 90%;
-	line-height: 30px;
-	text-align: center;
-	margin-right:10px;
+		.story {
+			margin-left: 10px;
+			width: 90%;
+			line-height: 30px;
+			text-align: center;
+			margin-right:10px;
 
-}
-
-.text_story .p_img img {
-	width: 90%;
-	margin-left: 6%;
-	margin-right: 10px;
-	border: 3px solid #2b262d;
-}
-
+		.p_img 
+			img {
+				width: 90%;
+				margin-left: 6%;
+				margin-right: 10px;
+				border: $border_image;
+			}
+		}
+	}
 
 .chef {
 	display: flex;
@@ -726,23 +667,24 @@ form textarea {
 	margin-left: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-}
 
-.chef .chef_img img {
-	width: 90%;
-	margin-top: 0px;
-	margin-left: 6%;
-	margin-right: 10px;
-	border: 3px solid #2b262d;
-}
+	.chef_story {
+		margin-left: 15px;
+		margin-top: 20px;
+		width: 90%;
+		text-align: center;
+		line-height: 30px;
+		margin-right:10px;	
 
-.chef .chef_story {
-	margin-left: 15px;
-	margin-top: 20px;
-	width: 90%;
-	text-align: center;
-	line-height: 30px;
-	margin-right:10px;
+	.chef_img 
+		img {
+			width: 90%;
+			margin-top: 0px;
+			margin-left: 6%;
+			margin-right: 10px;
+			border: $border_image;
+		}
+	}
 }
 
 .story h2 {
@@ -761,18 +703,17 @@ form textarea {
 
 
 .text_ap h3 {
-	margin-left: 20px
+	margin-left: 20px;
 }
 
 
 .da {
-	margin-left: 20px
+	margin-left: 20px;
 }
 
 .container_2 {
 	margin-left: 80px;
 }
-
 
 .text_location {
 	display: flex;
@@ -783,50 +724,50 @@ form textarea {
 	width: 90%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-	
-}
 
-.text_location .location {
-	margin-left: 20px;
-	margin-right: 10px;
-	line-height: 20px;
-}
+	.location {
+		margin-left: 20px;
+		margin-right: 10px;
+		line-height: 20px;
 
-.location h3 {
-	margin-left: 0px;
-}
+		h3 {
+			margin-left: 0px;
 
-.text_location .map {
-	width: 90%;
-	margin-top: 30px;
-	margin-left: 20px;
-	margin-right: 5px;
-}
+	.map {
+		width: 90%;
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 5px;
 
-.text_location li{
-	margin-bottom: 20px;
-	margin-left: 0px;
+	li{
+		margin-bottom: 20px;
+		margin-left: 0px;
+	}
+	}
+		}
+	}
 }
 
 .greeting h3 {
 	margin-left: 30px;
 }
 
-.menu dt {
-	margin-left: 20px;
-}
+.menu 
+	dt {
+		margin-left: 20px;
 
-.menu dd {
-	margin-left: 50px;
+	dd {
+		margin-left: 50px;
+	}
 }
 
 .bread_description {
 	display: inline;
-}
 
-.bread_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
 
 .back a {
@@ -854,13 +795,12 @@ form textarea {
 
 .pastry_description {
 	display: inline;
-}
 
-.pastry_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
-
 
 .grid_pastries {  
 	width: 90%;
@@ -876,13 +816,12 @@ form textarea {
 
 .cookie_description {
 	display: inline;
-}
 
-.cookie_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
-
 
 .grid_cookies {  
 	width: 90%;
@@ -896,13 +835,12 @@ form textarea {
 
 .sandwich_description {
 	display: inline;
-}
 
-.sandwich_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
-
 
 .grid_sandwiches {  
 	width: 90%;
@@ -915,8 +853,6 @@ form textarea {
 }
 
 }
-
-
 
 /* TABLET */
 
@@ -954,24 +890,23 @@ form textarea {
 	font-weight: 300;
 	margin-top: 50px;
 	margin-bottom: 80px;
-} 
 
-.text_story .story {
-	margin-left: 30px;
-	width: 90%;
-	line-height: 30px;
-	text-align: center;
-	margin-right:10px;
+	.story {
+		margin-left: 30px;
+		width: 90%;
+		line-height: 30px;
+		text-align: center;
+		margin-right:10px;
 
+	.p_img 
+		img {
+			width: 90%;
+			margin-left: 6%;
+			margin-right: 10px;
+			border: $border_image;
+		}
+	}
 }
-
-.text_story .p_img img {
-	width: 90%;
-	margin-left: 6%;
-	margin-right: 10px;
-	border: 3px solid #2b262d;
-}
-
 
 .chef {
 	display: flex;
@@ -980,23 +915,24 @@ form textarea {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-}
 
-.chef .chef_img img {
-	width: 90%;
-	margin-top: 0px;
-	margin-left: 6%;
-	margin-right: 10px;
-	border: 3px solid #2b262d;
-}
+	.chef_story {
+		margin-left: 30px;
+		margin-top: 20px;
+		width: 90%;
+		text-align: center;
+		line-height: 30px;
+		margin-right:10px;
 
-.chef .chef_story {
-	margin-left: 30px;
-	margin-top: 20px;
-	width: 90%;
-	text-align: center;
-	line-height: 30px;
-	margin-right:10px;
+	.chef_img 
+		img {
+			width: 90%;
+			margin-top: 0px;
+			margin-left: 6%;
+			margin-right: 10px;
+			border: $border_image;
+		}
+	}
 }
 
 .story h2 {
@@ -1005,7 +941,7 @@ form textarea {
 }
 
 .text1, 
-.text2 ,
+.text2,
 .text3, 
 .text4 {
 	width: 90%;
@@ -1015,17 +951,18 @@ form textarea {
 
 
 .text_ap h3 {
-	margin-left: 20px
+	margin-left: 20px;
 }
 
 
 .da {
-	margin-left: 20px
+	margin-left: 20px;
 }
 
 .container_2 {
 	margin-left: 80px;
 }
+
 .text_location {
 	display: flex;
 	flex-direction: column;
@@ -1035,51 +972,51 @@ form textarea {
 	width: 90%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-	
-}
 
-.text_location .location{
-	margin-left: 20px;
-	margin-right: 10px;
-	line-height: 20px;
-}
+	.location{
+		margin-left: 20px;
+		margin-right: 10px;
+		line-height: 20px;
 
-.location h3 {
-	margin-left: 0px;
-}
+		h3 {
+			margin-left: 0px;
 
-.text_location .map {
-	width: 90%;
-	margin-top: 30px;
-	margin-left: 20px;
-	margin-right: 5px;
-}
+	.map {
+		width: 90%;
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 5px;
 
-.text_location li{
-	margin-bottom: 20px;
-	margin-left: 0px;
+	li{
+		margin-bottom: 20px;
+		margin-left: 0px;
+	}
+	}
+		}
+	}
 }
 
 .greeting h3 {
 	margin-left: 30px;
 }
 
-.menu dt {
-	margin-left: 60px;
-}
+.menu 
+	dt {
+		margin-left: 60px;
 
-.menu dd {
-	margin-left: 80px;
+	dd {
+		margin-left: 80px;
+	}
 }
 
 .bread_description {
 	display: inline;
-}
 
-.bread_description h3 {
-	width: 100%;
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
 
 .back a {
@@ -1095,12 +1032,12 @@ form textarea {
 
 .pastry_description {
 	display: inline;
-}
 
-.pastry_description h3 {
-	width: 100%;
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
 
 .back a {
@@ -1116,12 +1053,12 @@ form textarea {
 
 .cookie_description {
 	display: inline;
-}
 
-.cookie_description h3 {
-	width: 100%;
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
 
 .back a {
@@ -1137,12 +1074,12 @@ form textarea {
 
 .sandwich_description {
 	display: inline;
-}
 
-.sandwich_description h3 {
-	width: 100%;
-	margin-left: 20px;
-	margin-top: 20px;
+	h3 {
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }
 
 .back a {
@@ -1157,8 +1094,6 @@ form textarea {
 }
 
 }
-
-
 
 /* DESKTOP */
 
