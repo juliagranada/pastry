@@ -60,7 +60,7 @@ a:hover {
   margin-top: 20px; }
 
 /* PRODUCTS SECTION */
-h2 {
+home_title h1 {
   text-align: left;
   margin-left: 120px;
   margin-top: 40px;
@@ -104,7 +104,7 @@ h2 {
   margin-top: 300px; }
 
 /* PAGE: ABOUT */
-.story h2 {
+.story h1 {
   text-align: left;
   margin-top: 100px;
   margin-left: 350px; }
@@ -154,6 +154,12 @@ img {
       border: 3px solid #2b262d; }
 
 /* PAGE: MENU */
+.title_menu h1 {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 150px;
+  text-decoration: underline; }
+
 .menu
 dt {
   margin-top: 50px;
@@ -163,6 +169,12 @@ dt dd {
     margin-left: 180px; }
 
 /* PAGE: ORDER */
+.title_order h1 {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 150px;
+  text-decoration: underline; }
+
 .text1,
 .text2,
 .text3,
@@ -181,9 +193,10 @@ dt dd {
   margin-left: 550px; }
 
 /* PAGE: LOCATION */
-.main h2 {
+.title_location h1 {
   text-align: left;
-  margin-left: 120px; }
+  margin-left: 120px;
+  margin-top: 50px; }
 
 .text_location {
   display: flex;
@@ -210,9 +223,16 @@ dt dd {
   text-align: center; }
 
 /* PAGE: CONTACT */
-h3 {
+.title_contact h1 {
   margin-left: 120px;
-  margin-top: 60px; }
+  margin-right: 50px;
+  margin-top: 60px;
+  text-decoration: underline; }
+
+.text_contact h2 {
+  margin-left: 120px;
+  margin-right: 50px;
+  margin-top: 10px; }
 
 .form {
   margin-top: 50px; }
