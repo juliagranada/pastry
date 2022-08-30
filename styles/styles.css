@@ -695,12 +695,20 @@ form textarea {
 		margin-left: 30px;
 	}
 
+	.home_title h1 {
+		margin-left: 30px;
+	}
+
 	h2 {
 		margin-left: 30px;
 	}
 
-	.grid {
-		margin-left: 30px;
+	.grid img {
+		margin-left: 200px;
+	}
+
+	.grid .btn {
+		margin-left: 200px;
 	}
 
 	.social {
@@ -957,12 +965,28 @@ form textarea {
 		margin-left: 60px;
 	}
 
+	.home_title h1 {
+		margin-left: 50px;
+	}
+
+
+	.grid {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: "grid1 grid2"
+	                     "grid3 grid4"
+	                   }
+
+	                   
+
+
 	h2 {
 		margin-left: 60px;
 	}
-	.grid img {
-		margin-right: 100px;
-	}
+
 
 	.social {
 		margin-right: 100px;
@@ -1191,4 +1215,13 @@ form textarea {
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
 
-}
+	.grid {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: "grid1 grid2"
+	                     "grid3 grid4"
+
+}}
