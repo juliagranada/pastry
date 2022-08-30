@@ -142,6 +142,7 @@ a:hover {
 	align-items: center;
 	margin-left: 120px;
 	margin-right: 250px;
+
 }
 
 
@@ -153,6 +154,7 @@ a:hover {
 
 .grid1 {
 	grid-area: bread;
+
 }
 
 .grid2 {
@@ -166,6 +168,8 @@ a:hover {
 .grid4 {
 	grid-area: cookies;
 }
+
+
 
 
 .grid a {
