@@ -12,25 +12,6 @@ body {
 }
 
 
-.nav_title ul {
-	padding: 0;
-	list-style: none;
-}
-
-
-.nav_sections a {
-	color: #2b262d;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-
-}
-
-.nav_sections a:hover {
-	color: #5b276b;
-
-}
-
 
 
 .title {
@@ -60,33 +41,36 @@ body {
 
 .nav_sections li {
 	display: inline;
+}
+
+.nav_sections a {
+	color: white;
+	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
-	
-}
 
-a {
-	color: inherit
-}
-
-a:hover {
-	color: #5b276b;
-	text-decoration: none;
 }
 
 
 /* TRANSITION */
 
 .nav_sections a {
-  color: #5b276b;
+	
+  background-image: linear-gradient(currentColor, currentColor);
+ 	background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 0,2s;
   transition-timing-function: ease-in;
   transition-delay: 0s;
+  
 }
 
-.nav_sections a:hover{
-  color: #2b262d;
+.nav_sections a:hover, a:focus {
+  color: #f4c277;
+  background-size: 100% 2px;
 }
 
 
@@ -99,6 +83,7 @@ a:hover {
 	flex-direction: column;
 	margin-left: 120px;
 	margin-right: 120px;
+
 }
 
 
@@ -124,14 +109,13 @@ a:hover {
 .grid {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	column-gap: 150px;
 	row-gap: 30px;
 	flex-wrap: wrap;
-	align-items: center;
-	margin-left: 120px;
-	margin-right: 250px;
-
+	flex-wrap: wrap;
+  align-items: center;
+  margin-left: 180px;
+  margin-right: 180px;
 }
 
 
@@ -168,14 +152,12 @@ a:hover {
 }
 
 .grid a:hover {
-	color: #5b276b;
+	color: #f4c277;
 }
 
 .container {
-	margin-top: 300px;
+	margin-top: 100px;
 }
-
-
 
 /* PAGE: ABOUT */
 
@@ -323,9 +305,9 @@ h1 {
 }
 
 .text_location .map {
-	width: 100%;
+	width: 90%;
 	margin-top: 50px;
-	margin-left: 120px;
+	margin-left: 180px;
 }
 
 .text_location li{
@@ -391,7 +373,7 @@ form textarea {
 }
 
 .back a:hover {
-	color: #5b276b;
+	color: #f4c277;
 }
 
 
@@ -407,14 +389,15 @@ form textarea {
 	width: 80%;
 	margin: auto;
 	display: grid;
-  	grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
  	grid-template-rows: 1fr 1fr 1fr 1fr;
  	grid-auto-flow: row;
  	grid-column-gap: 10px;
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 200px;
+  margin-left: 260px;
+  margin-right: 180px;
   	grid-template-areas:
     "b1 b2"
     "b3 b4"
@@ -481,7 +464,8 @@ form textarea {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 200px;
+  margin-left: 260px;
+  margin-right: 180px;
   	grid-template-areas:
     "p1 p2"
     "p3 p4"
@@ -547,7 +531,8 @@ form textarea {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 200px;
+  margin-left: 260px;
+  margin-right: 180px;
   	grid-template-areas:
     "s1 s2"
     "s3 s4"
@@ -614,7 +599,8 @@ form textarea {
  	grid-row-gap: 50px;
  	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: 200px;
+  margin-left: 260px;
+  margin-right: 180px;
   	grid-template-areas:
     "c1 c2"
     "c3 c4"

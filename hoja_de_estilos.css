@@ -11,18 +11,22 @@
   width: 80%;
   margin-right: 160px; }
   .nav_sections a {
-    color: #2b262d;
+    color: white;
     font-size: 20px;
     text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
     text-transform: uppercase;
-    color: #5b276b;
     transition-property: color;
-    transition-duration: 1s;
+    transition-duration: 0,2s;
     transition-timing-function: ease-in;
     transition-delay: 0s; }
-    .nav_sections a a:hover {
-      color: #5b276b;
-      color: #2b262d; }
+    .nav_sections a a:hover, a:focus {
+      color: #f4c277;
+      background-size: 100% 2px; }
       .nav_sections a a:hover li {
         display: inline;
         text-decoration: none;
@@ -74,8 +78,8 @@ home_title h1 {
   row-gap: 30px;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 120px;
-  margin-right: 250px; }
+  margin-left: 180px;
+  margin-right: 180px; }
   .grid img {
     background-color: black;
     border: 3px solid #2b262d;
@@ -86,7 +90,7 @@ home_title h1 {
       text-decoration: none;
       text-transform: uppercase; }
       .grid img a a:hover {
-        color: #5b276b; }
+        color: #f4c277 }
 
 .grid1 {
   grid-area: bread; }
@@ -101,7 +105,7 @@ home_title h1 {
   grid-area: cookies; }
 
 .container {
-  margin-top: 300px; }
+  margin-top: 100px; }
 
 /* PAGE: ABOUT */
 .story h1 {
@@ -214,7 +218,7 @@ dt dd {
       .text_location .location h3 .map {
         width: 100%;
         margin-top: 50px;
-        margin-left: 120px; }
+        margin-left: 180px; }
         .text_location .location h3 .map li {
           margin-bottom: 20px; }
           .text_location .location h3 .map li p {
@@ -263,7 +267,7 @@ a {
   text-transform: uppercase; }
   .back
 a a:hover {
-    color: #5b276b; }
+    color: #f4c277; }
 
 .bread_description {
   margin-left: 120px;
@@ -282,8 +286,12 @@ a a:hover {
   grid-row-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 200px;
-  grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8"; }
+  margin-left: 260px;
+  margin-right: 180px;
+  grid-template-areas: "b1 b2"
+ "b3 b4"
+ "b5 b6"
+ "b7 b8"; }
   .grid_breads img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -330,8 +338,12 @@ a a:hover {
   grid-row-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 200px;
-  grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8"; }
+  margin-left: 260px;
+  margin-right: 180px;
+  grid-template-areas: "p1 p2"
+ "p3 p4"
+ "p5 p6"
+ "p7 p8"; }
   .grid_pastries img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -378,8 +390,12 @@ a a:hover {
   grid-row-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 200px;
-  grid-template-areas: "s1 s2" "s3 s4" "s5 s6" "s7 s8"; }
+  margin-left: 260px;
+  margin-right: 180px;
+  grid-template-areas: "s1 s2"
+ "s3 s4"
+ "s5 s6"
+ "s7 s8"; }
   .grid_sandwiches img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -426,8 +442,12 @@ a a:hover {
   grid-row-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 200px;
-  grid-template-areas: "c1 c2" "c3 c4" "c5 c6" "c7 c8"; }
+  margin-left: 260px;
+  margin-right: 180px;
+  grid-template-areas: "c1 c2"
+ "c3 c4"
+ "c5 c6"
+ "c7 c8"; }
   .grid_cookies img {
     background-color: black;
     border: 3px solid #2b262d; }
