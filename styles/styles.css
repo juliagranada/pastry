@@ -229,7 +229,7 @@ body {
 .title_menu h1 {
 	text-align: left;
 	margin-top: 50px;
-	margin-left: 150px;
+	margin-left: 200px;
 	text-decoration: none;	
 }
 
@@ -312,7 +312,7 @@ h1 {
 
 .title_location h1 {
 	text-align: left;
-	margin-left: 120px;
+	margin-left: 200px;
 	margin-top: 50px;
 }
 
@@ -320,25 +320,23 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
-	
 }
 
 .text_location .location{
 	justify-content: flex-start;
-	margin-left: 120px;
+	margin-left: 200px;
 	margin-right: 200px;
 }
 
-.location h3 {
-	margin-left: 0px;
+
+.store_info h3 {
+	margin-top: 30px;
 }
 
 .text_location .map {
 	width: 90%;
 	margin-top: 50px;
-	margin-left: 180px;
+	margin-left: 200px;
 }
 
 .text_location li{
@@ -358,15 +356,15 @@ h1 {
 /* PAGE: CONTACT */
 
 .title_contact h1 {
-	margin-left: 120px;
-	margin-right: 50px;
+	margin-left: 200px;
+	margin-right: 120px;
 	margin-top: 60px;
 	text-decoration: none;
 }
 
 .text_contact h2 {
-	margin-left: 120px;
-	margin-right: 50px;
+	margin-left: 200px;
+	margin-right: 120px;
 	margin-top: 10px;
 }
 
