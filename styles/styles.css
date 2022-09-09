@@ -273,8 +273,6 @@ body {
 
 
 
-
-
 /* PAGE: ORDER */
 
 h1 {
@@ -709,7 +707,7 @@ form textarea {
 	}
 
 	.grid img {
-		margin-left: 200px;
+		margin-left: 150px;
 	}
 
 	.grid .btn {
@@ -724,9 +722,10 @@ form textarea {
 		margin-right: 30px;
 	}
 
-	.footer {
-		margin-top: 100px;
-	}
+	.story h1 {
+	margin-top: 70px;
+	margin-left: 160px;	
+}
 
 .text_story {
 	display: flex;
@@ -735,14 +734,12 @@ form textarea {
 	width: 90%;
 	margin-left: 20px;
 	margin-right: 10px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 80px;
 } 
 
 .text_story .story {
-	margin-left: 10px;
+	margin-left: 20px;
 	width: 90%;
 	line-height: 30px;
 	text-align: center;
@@ -754,7 +751,6 @@ form textarea {
 	width: 90%;
 	margin-left: 6%;
 	margin-right: 10px;
-	border: 3px solid #2b262d;
 }
 
 
@@ -764,8 +760,6 @@ form textarea {
 	justify-content: center;
 	width: 90%;
 	margin-left: 20px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
 }
 
 .chef .chef_img img {
@@ -773,11 +767,10 @@ form textarea {
 	margin-top: 0px;
 	margin-left: 6%;
 	margin-right: 10px;
-	border: 3px solid #2b262d;
 }
 
 .chef .chef_story {
-	margin-left: 15px;
+	margin-left: 20px;
 	margin-top: 20px;
 	width: 90%;
 	text-align: center;
@@ -785,175 +778,206 @@ form textarea {
 	margin-right:10px;
 }
 
-.story h2 {
-	margin-left: 120px;
-	margin-top: 50px;
+.title_menu h1 {
+	margin-left: 50px;	
+	margin-bottom: 30px;
 }
 
-.text1, 
-.text2 ,
-.text3, 
-.text4 {
+.menu {
+	display: inline-block;
+	width: 80%;
+	text-align: center;
+}
+
+.sub_title h2,
+.sub_title1 h2 {
+	margin-left: 10px;
+}
+
+.menu_column1,
+.menu_column2 {
+	width: 80%;
+	margin-top: 5px;
+  margin-left: 80px;
+}
+
+.menu_column2 .sub_title h2 {
+	margin-top: 120px;
+}
+
+.video  {
+	margin-left:20px;
+	margin-top: 30px;
 	width: 90%;
-	margin-left: 20px;
-	line-height: 30px;
+	overflow:hidden;
+  padding-bottom:200px; 
+  position:relative;
+  height:0;
+}
+.video iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 
-.text_ap h3 {
-	margin-left: 20px
+.title_order h1 {
+	margin-left: 40px;
 }
 
-
-.da {
-	margin-left: 20px
+.text_ap .text1 {
+	margin-left: 40px;
+	margin-right: 20px;
 }
 
-.container_2 {
-	margin-left: 80px;
+.orderflex {
+	display: block;
 }
 
+.orderflex h2 {
+	margin-left: 0px;
+}
+.orderflex1 {
+	margin-left: 40px;
+	width: 85%;
+}
+.orderflex2 {
+	margin-left: 40px;
+	width: 85%;
+}
+
+.orderflex1 .deli h2 {
+	margin-left: 0px;
+	margin-top: 15px;
+}
+
+.orderflex2 .da h2 {
+	margin-top: 15px;
+}
+
+.container_2 .mb-4 {
+	margin-left: 0px;
+}
+
+.title_location h1 {
+	margin-left: 50px;
+	margin-top: 30px;
+}
 
 .text_location {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-left: 20px;
 	margin-right: 10px;
 	width: 90%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-	
 }
 
 .text_location .location {
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-right: 10px;
-	line-height: 20px;
-}
-
-.location h3 {
-	margin-left: 0px;
 }
 
 .text_location .map {
-	width: 90%;
-	margin-top: 30px;
-	margin-left: 20px;
-	margin-right: 5px;
-}
-
-.text_location li{
-	margin-bottom: 20px;
-	margin-left: 0px;
-}
-
-.greeting h3 {
-	margin-left: 30px;
-}
-
-.menu dt {
-	margin-left: 20px;
-}
-
-.menu dd {
 	margin-left: 50px;
+	margin-top: 10px;
+
 }
 
-.bread_description {
-	display: inline;
-}
 
-.bread_description h3 {
-	margin-left: 20px;
+.title_contact h1 {
+	margin-left: 50px;
+	margin-right: 20px;
 	margin-top: 20px;
 }
 
+.text_contact h2 {
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+
+
 .back a {
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-top: 40px;
 	color: #2b262d;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
+}
 
+.bread_description {
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 .grid_breads {  
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-left: 35px;
- 	grid-row-gap: 30px;
- 	grid-column-gap: 30px;
- 	
+	margin-left: 75px;
+}
+
+.b8 {
+	margin-bottom: 40px;
 }
 
 
 .pastry_description {
-	display: inline;
+	margin-left: 30px;
+	margin-right: 30px;
 }
-
-.pastry_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
-}
-
 
 .grid_pastries {  
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-left: 35px;
- 	grid-row-gap: 30px;
- 	grid-column-gap: 30px;
-	
+	margin-left: 75px;
+}
+
+.p8 {
+	margin-bottom: 40px;
 }
 
 
-.cookie_description {
-	display: inline;
+.cookie_description  {
+	margin-left: 30px;
+	margin-right: 30px;
 }
-
-.cookie_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
-}
-
 
 .grid_cookies {  
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-left: 35px;
- 	grid-row-gap: 30px;
- 	grid-column-gap: 30px;
+	margin-left: 75px;
 }
 
-.sandwich_description {
-	display: inline;
+.c8 {
+	margin-bottom: 40px;
 }
 
-.sandwich_description h3 {
-	margin-left: 20px;
-	margin-top: 20px;
-}
 
+.sandwich_description  {
+	margin-left: 30px;
+	margin-right: 30px;
+}
 
 .grid_sandwiches {  
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-left: 35px;
- 	grid-row-gap: 30px;
- 	grid-column-gap: 30px;
+	margin-left: 75px;
 }
 
+.s8 {
+	margin-bottom: 40px;
 }
 
 
