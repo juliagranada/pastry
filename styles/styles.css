@@ -15,11 +15,10 @@ body {
 
 
 .nav_sections {
+	width: 80%;
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	justify-content: flex-end;
-	margin-bottom: 10px;
+	flex-wrap: nowrap;
 	padding-right: 10px;
 	margin-left: 120px;
 	}
@@ -27,35 +26,18 @@ body {
 .title1 {
 	margin-left: 0px;
 	display: inline;
-	width: 20%;
+	width: 40%;
 }
 
 
 .nav_bar {
+	width: 70%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: flex-end;
 	justify-content: flex-end;
-	column-gap: 10px;
-	width: 180%;
-	margin-right: 260px;
-
-}
-
-.nav_sections a {
-	font-size: 20px;
-}
-
-
-
-
-
-.nav_sections .toggle {
-	background-color: black;
-	color: white;
-	font-size: 30px;
-	display: none;
+	column-gap: 20px;
 
 }
 
@@ -68,6 +50,9 @@ body {
 	text-transform: uppercase;
 
 }
+
+
+
 
 
 /* TRANSITION */
@@ -696,21 +681,37 @@ form textarea {
 
 @media only screen and (min-width: 480px) and (max-width: 989px) {
 
-.header {
-	height: 60px;
-}
 
 .nav_sections {
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
+	width: 200%;
+	justify-content: flex-end;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	}
 
+	.title1 {
+	margin-right: 0px;
+	width: 90%;
 }
 
-.nav_sections .toggle {
+/*.nav_bar {
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 40%;
+	margin-right: 10px;
+	font-size: 10px;
+
+}*/
+
+/*.nav_bar a {
+  font-size: 10px;
+}*/
+
+
+/*.nav_sections .toggle {
 	display: block;
 
-}
+}*/
 
 .nav_section_visible
 
