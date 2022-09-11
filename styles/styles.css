@@ -91,6 +91,7 @@ body {
 	line-height: 30px;
 	color: #7b727f;
 	margin-top: 20px;
+	font-size: 20px
 }
 
 
@@ -171,6 +172,7 @@ body {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
+	font-size: 20px;
 	margin-top: 50px;
 	margin-bottom: 80px;
 } 
@@ -212,8 +214,10 @@ body {
 .chef .chef_story {
 	margin-left: 150px;
 	width: 30%;
+	margin-top: 30px;
 	line-height: 30px;
 	margin-right:70px;
+	font-size: 20px;
 }
 
 
@@ -237,10 +241,11 @@ body {
 
 .menu_column1,
 .menu_column2 {
-	width: 250px;
+	width: 300px;
    height: 450px;
    margin: 80px;
    margin-top: 40px;
+   font-size: 20px;
 }
 
 .sub_title {
@@ -256,8 +261,8 @@ body {
 
 
 .video {
-	margin-top: 100px;
-	margin-left: 340px;
+	margin-top: 150px;
+	margin-left: 210px;
 
 }
 
@@ -280,6 +285,7 @@ h1 {
 	margin-left: 200px;
 	margin-right: 150px;
 	margin-bottom: 30px;
+	font-size: 20px;
 }
 
 .orderflex {
@@ -298,6 +304,7 @@ h1 {
   margin: 30px;
   margin-left: 220px;
   row-gap: 30px;
+  font-size: 20px;
 }
 
 .deli h3 {
@@ -317,6 +324,7 @@ h1 {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 100%;
+	font-size: 20px;
 }
 
 .text_location .location{
@@ -340,7 +348,7 @@ h1 {
 }
 
 .location p {
-	line-height: 20px;
+	line-height: 30px;
 }
 
 
@@ -358,10 +366,11 @@ h1 {
 	text-align: center;
 }
 
-.text_contact h2 {
+.text_contact {
 	margin-left: 200px;
 	margin-right: 120px;
 	margin-top: 10px;
+	font-size: 25px;
 }
 
 .form {
@@ -687,19 +696,13 @@ form textarea {
 
 
 .nav_sections {
-	width: 200%;
-	justify-content: flex-end;
-	margin-bottom: 0px;
-	margin-left: 20px;
-	}
-
-	.title1 {
-	margin-right: 0px;
-	width: 90%;
+  margin-left: 20px;
+  justify-content: center;
 }
-
-
-
+.main {
+  margin-left: 20px;
+  justify-content: center;
+}
 
 	.story h1 {
 	margin-top: 70px;
@@ -778,7 +781,7 @@ form textarea {
 }
 
 .menu_column2 .sub_title h2 {
-	margin-top: 120px;
+	margin-top: 180px;
 }
 
 .video  {
@@ -812,6 +815,7 @@ form textarea {
 }
 
 .orderflex h2 {
+	margin-top: 60px;
 	margin-left: 0px;
 }
 .orderflex1 {
@@ -868,7 +872,7 @@ form textarea {
 	margin-top: 20px;
 }
 
-.text_contact h2 {
+.text_contact {
 	margin-left: 50px;
 	margin-right: 20px;
 }
@@ -959,6 +963,12 @@ form textarea {
 
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
 
+.nav_sections {
+	margin-left: 100px;
+}
+.main {
+  margin-left: 100px;
+}
 
 .nav_bar ul {
 	justify-content: flex-end;
@@ -981,15 +991,17 @@ form textarea {
 	margin-top: 30px;
 }
 
+
  .text_story .story {
- 	width: 50%;
- 	margin-left: 100px;
+ 	width: 40%;
+ 	margin-left: 60px;
  }
 
 
 .chef .chef_img img {
 	width: 100%;
-	margin-left: 30%;
+	height: 600px;
+	margin-left: 20%;
 }
 
 .chef .chef_story {
@@ -1051,7 +1063,7 @@ form textarea {
 }
 
 .title_contact h1,
-.text_contact h2 {
+.text_contact  {
 	margin-left: 120px;
 }
 
@@ -1084,5 +1096,22 @@ form textarea {
 /* DESKTOP */
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+.text_story .story {
+	margin-left: 100px;
+	width: 40%;
+	line-height: 40px;
+}
+
+.chef .chef_img img {
+	width: 85%;
+	margin-left:20%;
+}
+
+.chef .chef_story {
+	margin-left: 90px;
+	width: 40%;
+	line-height: 40px;
+}
 
 }
