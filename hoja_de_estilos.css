@@ -745,22 +745,13 @@ a a:hover {
 /* TABLET */
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
  
-.title {
-   width: 100%;
+
+
+
+.nav_bar  {
   justify-content: flex-end;
-  height: 100px;
-}
+  margin-right: 190px;
 
-
- .title1 {
-  margin-left: 120px;
-  width: 60%;
-
-}
-
-.nav_sections {
-  width: 120%;
-  margin-right: 70px;
  } 
 
   .grid {
