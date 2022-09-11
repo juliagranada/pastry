@@ -411,7 +411,8 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
+	font-size: 20px;
 }
 
 .grid_breads {  
@@ -479,7 +480,8 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
+	font-size: 20px;
 }
 
 .grid_pastries {  
@@ -546,7 +548,8 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
+	font-size: 20px;
 }
 
 .grid_sandwiches {  
@@ -614,7 +617,8 @@ form textarea {
 	margin-left: 120px;
 	margin-right: 120px;
 	margin-top: 50px;
-	line-height: 30px
+	line-height: 30px;
+	font-size: 20px;
 }
 
 .grid_cookies {  
@@ -694,26 +698,7 @@ form textarea {
 	width: 90%;
 }
 
-/*.nav_bar {
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 40%;
-	margin-right: 10px;
-	font-size: 10px;
 
-}*/
-
-/*.nav_bar a {
-  font-size: 10px;
-}*/
-
-
-/*.nav_sections .toggle {
-	display: block;
-
-}*/
-
-.nav_section_visible
 
 
 	.story h1 {
@@ -975,12 +960,19 @@ form textarea {
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
 
 
-.nav_bar  {
+.nav_bar ul {
 	justify-content: flex-end;
-	margin-right: 190px;
+	margin-right: 5px;
 
  } 
 
+ .title1 img {
+ 	height: 80px;
+ }
+
+ .nav_bar {
+  width: 100%;
+ }
   .grid {
   column-gap: 50px;
  }

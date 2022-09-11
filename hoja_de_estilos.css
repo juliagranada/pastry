@@ -415,7 +415,8 @@ a a:hover {
   margin-left: 120px;
   margin-right: 120px;
   margin-top: 50px;
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 20px; }
 
 .grid_pastries {
   width: 80%;
@@ -467,7 +468,8 @@ a a:hover {
   margin-left: 120px;
   margin-right: 120px;
   margin-top: 50px;
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 20px; }
 
 .grid_sandwiches {
   width: 80%;
@@ -519,7 +521,8 @@ a a:hover {
   margin-left: 120px;
   margin-right: 120px;
   margin-top: 50px;
-  line-height: 30px; }
+  line-height: 30px; 
+  font-size: 20px;}
 
 .grid_cookies {
   width: 80%;
@@ -583,22 +586,7 @@ a a:hover {
   width: 90%;
 }
 
-/*.nav_sections {
-  height: 60px;
-  }*/
 
-.nav_bar  {
-  flex-direction: column;
-}
-
-/*.nav_sections a {
-  font-size: 10px;
-}
-
-.nav_sections .toggle {
-  display: block;
-
-}*/
 
 
   .story h1 {
@@ -774,11 +762,19 @@ a a:hover {
 /* TABLET */
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
 
-.nav_bar  {
+.nav_bar  ul {
   justify-content: flex-end;
-  margin-right: 190px;
+  margin-right: 5px;
 
  } 
+
+ .title1 img {
+  height: 80px;
+ }
+
+ .nav_bar {
+  width: 100%;
+ }
 
   .grid {
   column-gap: 50px;
