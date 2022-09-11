@@ -2,18 +2,37 @@
   padding: 0;
   list-style: none; }
 
+
 .nav_sections {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  margin-left: 120px;
+  }
+
+
+.title1 {
+  margin-left: 0;
+  margin-right: 80px;
+  display: inline;
+  width: 50%; }
+.nav_bar {
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-end;
   justify-content: flex-end;
   column-gap: 10px;
-  width: 80%;
-  margin-right: 160px; }
-  .nav_sections a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+  width: 100%;
+  margin-right: 260px;
+
+}
+
+.nav_sections a {
+  font-size: 20px;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -32,16 +51,13 @@
         text-decoration: none;
         text-transform: uppercase; }
 
-.title {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: flex-end; }
+.nav_sections .toggle {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  display: none;
 
-.title1 {
-  margin-left: 200px;
-  display: inline;
-  width: 50%; }
+}
 
 a {
   color: inherit; }
@@ -74,7 +90,7 @@ a:hover {
 .grid {
   display: flex;
   flex-direction: row;
-  column-gap: 150px;
+  column-gap: 300px;
   row-gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
@@ -539,14 +555,22 @@ a a:hover {
 
 /* MEDIA QUERIES */
 /* MOBILE */
-@media only screen and (min-width: 480px) and (max-width: 990px) {
+@media only screen and (min-width: 480px) and (max-width: 989px) {
 
-  .title1 {
+/*.title {
+  width: 80%;
+}
+
+.title1 {
+  width: 80%;
   margin-left: 10px;
 }
-.nav_sections {
-  margin-right: 20px;
-}
+
+.nav_sections  {
+  width: 30%;
+  margin-left: 70px;
+}*/
+
 
   .story h1 {
   margin-top: 70px;
@@ -719,19 +743,33 @@ a a:hover {
 }   
 
 /* TABLET */
-@media only screen and (min-width: 991px) and (max-width: 1199px) {
+@media only screen and (min-width: 990px) and (max-width: 1199px) {
+ 
+.title {
+   width: 100%;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+
  .title1 {
   margin-left: 120px;
+  width: 60%;
+
 }
 
 .nav_sections {
-  width: 100%;
-  margin-right: 90px;
+  width: 120%;
+  margin-right: 70px;
  } 
 
   .grid {
   column-gap: 50px;
  }
+
+  .story h1 {
+  margin-top: 30px;
+}
 
  .text_story .story {
   width: 50%;
@@ -807,6 +845,25 @@ a a:hover {
   margin-left: 120px;
 }
 
+.grid_breads {  
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+.grid_pastries {  
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+.grid_sandwiches {  
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+.grid_cookies {  
+  margin-left: 170px;
+  margin-top: 50px;
+}
 
 }
 
