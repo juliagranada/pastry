@@ -34,7 +34,7 @@ body {
   flex-wrap: nowrap;
   align-items: flex-end;
   justify-content: flex-end;
-  column-gap: 20px;
+  column-gap: 30px;
 
 }
 
@@ -106,7 +106,7 @@ body {
 .grid {
   display: flex;
   flex-direction: row;
-  column-gap: 300px;
+  column-gap: 25%;
   row-gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
@@ -702,11 +702,21 @@ form textarea {
   width: 80%;
 }
 
-
 .nav_sections .title1 img {
-  width: 60%;
+  width: 50%;
   height: 80%;
 }
+
+.nav_sections a {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.nav_bar {
+  width: 60%;
+  align-items: flex-end;
+}
+
 
 .main {
   width: 100%;
