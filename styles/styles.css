@@ -23,7 +23,8 @@ body {
 
 .title1 img {
 	display: inline;
-	width: 50%;
+	width: 55%;
+	height: 120%;
 	margin-left: 12%;
 }
 
@@ -190,7 +191,7 @@ body {
 	width: 40%;
 	line-height: 40px;
 	text-align: right;
-	margin-right:5%;
+	margin-right:3%;
 }
 
 .text_story .p_img img {
@@ -211,7 +212,7 @@ body {
 }
 
 .chef .chef_img img {
-	width: 85%;
+	width: 80%;
 	margin-top: 30px;
 	margin-left: 20%;
 	margin-right: 10px;
@@ -219,11 +220,11 @@ body {
 }
 
 .chef .chef_story {
-	margin-left: 5%;
+	margin-left: 3%;
 	width: 40%;
 	margin-top: 30px;
 	line-height: 40px;
-	margin-right:10%;
+	margin-right:0%;
 	font-size: 20px;
 }
 
