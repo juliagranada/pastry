@@ -15,23 +15,23 @@ body {
 
 
 .nav_sections {
-	width: 80%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	padding-right: 10px;
-	margin-left: 120px;
+	margin-right: 10%;
+	margin-left: 10%;
 	}
 
-.title1 {
-	margin-left: 0px;
+.title1 img {
 	display: inline;
-	width: 40%;
+	width: 50%;
+	margin-left: 12%;
 }
 
 
 .nav_bar {
-	width: 70%;
+	width: 60%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -81,17 +81,17 @@ body {
 
 .main {
 	display: flex;
-	width: 80%;
+	width: 100%;
 	flex-direction: column;
-	margin-left: 120px;
-	margin-right: 120px;
-
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .content p {
 	line-height: 30px;
 	color: #7b727f;
 	margin-top: 20px;
-	font-size: 20px
+	font-size: 20px;
+	margin-right: 20%;
 }
 
 
@@ -101,7 +101,7 @@ body {
 
 .home_title h1 {
 	text-align: left;
-	margin-left: 120px;
+	margin-left: 10%;
 	margin-top: 40px;
 	margin-bottom: 50px;
 }
@@ -113,9 +113,11 @@ body {
 	row-gap: 30px;
 	flex-wrap: wrap;
   justify-content: center;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+
 
 .grid img {
 	background-color: black;
@@ -161,8 +163,10 @@ body {
  .story h1 {
 	text-align: left;
 	margin-top: 100px;
-	margin-left: 350px;	
+	margin-left: 20%;	
 }
+
+
 
 .text_story {
 	display: flex;
@@ -178,12 +182,11 @@ body {
 } 
 
 .text_story .story {
-	margin-left: 200px;
-	width: 30%;
-	line-height: 30px;
+	margin-left: 10%;
+	width: 40%;
+	line-height: 40px;
 	text-align: right;
-	margin-right:50px;
-
+	margin-right:5%;
 }
 
 .text_story .p_img img {
@@ -204,19 +207,19 @@ body {
 }
 
 .chef .chef_img img {
-	width: 80%;
+	width: 85%;
 	margin-top: 30px;
-	margin-left: 40%;
+	margin-left: 20%;
 	margin-right: 10px;
 	border: 3px solid #2b262d;
 }
 
 .chef .chef_story {
-	margin-left: 150px;
-	width: 30%;
+	margin-left: 5%;
+	width: 40%;
 	margin-top: 30px;
-	line-height: 30px;
-	margin-right:70px;
+	line-height: 40px;
+	margin-right:10%;
 	font-size: 20px;
 }
 
@@ -226,7 +229,7 @@ body {
 .title_menu h1 {
 	text-align: left;
 	margin-top: 50px;
-	margin-left: 200px;
+	margin-left: 12%;
 	text-decoration: none;	
 }
 
@@ -241,8 +244,9 @@ body {
 
 .menu_column1,
 .menu_column2 {
-	width: 300px;
+	width: 30%;
    height: 450px;
+   text-align: center;
    margin: 80px;
    margin-top: 40px;
    font-size: 20px;
@@ -262,7 +266,7 @@ body {
 
 .video {
 	margin-top: 150px;
-	margin-left: 210px;
+	margin-left: 20%;
 
 }
 
@@ -270,9 +274,9 @@ body {
 
 /* PAGE: ORDER */
 
-h1 {
+.title_order h1 {
 	margin-top: 50px;
-	margin-left: 200px;
+	margin-left: 12%;
 	text-decoration: none;	
 }
 
@@ -282,7 +286,7 @@ h1 {
 }
 
 .text1 {
-	margin-left: 200px;
+	margin-left: 12%;
 	margin-right: 150px;
 	margin-bottom: 30px;
 	font-size: 20px;
@@ -290,6 +294,7 @@ h1 {
 
 .orderflex {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
@@ -299,12 +304,15 @@ h1 {
 
 .orderflex1,
 .orderflex2 {
-  width: 350px;
+  width: 35%;
   height: 200px;
   margin: 30px;
-  margin-left: 220px;
   row-gap: 30px;
   font-size: 20px;
+}
+
+.orderflex1 {
+	margin-left: 15%;
 }
 
 .deli h3 {
@@ -315,7 +323,7 @@ h1 {
 
 .title_location h1 {
 	text-align: left;
-	margin-left: 200px;
+	margin-left: 12%;
 	margin-top: 50px;
 }
 
@@ -329,7 +337,7 @@ h1 {
 
 .text_location .location{
 	justify-content: flex-start;
-	margin-left: 200px;
+	margin-left: 12%;
 	margin-right: 200px;
 }
 
@@ -340,7 +348,7 @@ h1 {
 .text_location .map {
 	width: 90%;
 	margin-top: 50px;
-	margin-left: 200px;
+	margin-left: 15%;
 }
 
 .text_location li{
@@ -356,8 +364,7 @@ h1 {
 /* PAGE: CONTACT */
 
 .title_contact h1 {
-	margin-left: 200px;
-	margin-right: 120px;
+	margin-left: 12%;
 	margin-top: 60px;
 	text-decoration: none;
 }
@@ -367,8 +374,8 @@ h1 {
 }
 
 .text_contact {
-	margin-left: 200px;
-	margin-right: 120px;
+	margin-left: 12%;
+	margin-right: 12%;
 	margin-top: 10px;
 	font-size: 25px;
 }
@@ -694,14 +701,30 @@ form textarea {
 
 @media only screen and (min-width: 480px) and (max-width: 989px) {
 
-
 .nav_sections {
-  margin-left: 20px;
-  justify-content: center;
+	width: 80%;
 }
+
+.nav_sections .title1 img {
+	width: 60%;
+	height: 80%;
+}
+
 .main {
-  margin-left: 20px;
-  justify-content: center;
+	width: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content p {
+	line-height: 30px;
+	margin-right: 20%;
+	text-align: center;
+}
+
+
+.home_title h1 {
+	margin-left: 25%;
 }
 
 	.story h1 {
@@ -802,28 +825,29 @@ form textarea {
 }
 
 .title_order h1 {
-	margin-left: 40px;
+	margin-left: 12%;
+	margin-right: 10%;
 }
 
 .text_ap .text1 {
-	margin-left: 40px;
-	margin-right: 20px;
+	margin-left: 12%;
+	margin-right: 10%;
 }
 
 .orderflex {
 	display: block;
 }
 
-.orderflex h2 {
-	margin-top: 60px;
-	margin-left: 0px;
+.orderflex1 h2 {
+	margin-top: 30px;
+	margin-left: 0%;
 }
 .orderflex1 {
-	margin-left: 40px;
-	width: 85%;
+	margin-left: 12%;
+	width: 80%;
 }
 .orderflex2 {
-	margin-left: 40px;
+	margin-left: 12%;
 	width: 85%;
 }
 
@@ -836,8 +860,13 @@ form textarea {
 	margin-top: 15px;
 }
 
+.orderflex2 h2 {
+	margin-top: 60px;
+}
+
 .container_2 .mb-4 {
 	margin-left: 0px;
+	margin-top: 20px;
 }
 
 .title_location h1 {
@@ -862,19 +891,21 @@ form textarea {
 }
 
 .text_location .map {
-	margin-left: 50px;
+	width: 100%;
+	margin-left: 10%;
 	margin-top: 10px;
 }
 
 .title_contact h1 {
-	margin-left: 50px;
+	margin-left: 15%;
 	margin-right: 20px;
 	margin-top: 20px;
 }
 
 .text_contact {
-	margin-left: 50px;
+	margin-left: 15%;
 	margin-right: 20px;
+	font-size: 20px;
 }
 
 .form .send {
@@ -956,6 +987,41 @@ form textarea {
 .s8 {
 	margin-bottom: 40px;
 }
+
+.back a {
+	margin-bottom: 10px;
+}
+
+.bread_description {
+	margin-left: 12%;
+	margin-right: 10%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.cookie_description {
+	margin-left: 12%;
+	margin-right: 10%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.pastry_description {
+	margin-left: 12%;
+	margin-right: 10%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.sandwich_description {
+	margin-left: 12%;
+	margin-right: 10%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+
 }
 
 
@@ -964,50 +1030,58 @@ form textarea {
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
 
 .nav_sections {
-	margin-left: 100px;
-}
-.main {
-  margin-left: 100px;
+	width: 80%;
 }
 
-.nav_bar ul {
-	justify-content: flex-end;
-	margin-right: 5px;
+.nav_sections .title1 img {
+	width: 60%;
+	height: 90%;
+}
 
- } 
+.nav_bar {
+  width: 70%;
+}
 
- .title1 img {
- 	height: 80px;
- }
+.grid {
+	column-gap: 20%;
+	row-gap: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
- .nav_bar {
-  width: 100%;
- }
-  .grid {
-  column-gap: 50px;
- }
 
  .story h1 {
 	margin-top: 30px;
 }
 
-
  .text_story .story {
- 	width: 40%;
+ 	width: 45%;
  	margin-left: 60px;
+ 	margin-right: 3%;
  }
 
+ .text_story .p_img img {
+	width: 80%;
+	margin-right: 10px;
+}
+
+.chef {
+	margin-left: 3%;
+
+}
 
 .chef .chef_img img {
-	width: 100%;
+	width: 90%;
 	height: 600px;
-	margin-left: 20%;
+	margin-left: 10%;
+	margin-right: 0px;
 }
 
 .chef .chef_story {
-  width: 50%;
-  margin-right:80px;
+  width: 40%;
+  margin-right:1%;
   margin-top: 20px;
+  margin-left: 3%;
 }
 
 .story h1 {
@@ -1025,33 +1099,34 @@ form textarea {
 }
 
 .video {
-	margin-left: 180px;
+	margin-left: 140px;
 }
 
 .title_order h1 {
 	margin-top: 50px;
-	margin-left: 130px;	
+	margin-left: 100px;	
 }
 
 .text1 {
-	margin-left: 130px;
+	margin-left: 100px;
 	margin-right: 60px;
 }
 
 .orderflex1 {
-  margin-left: 160px;
+  margin-left: 130px;
 }
 
 .orderflex2 {
-	margin-left: 20px;
+	margin-left: 0px;
 }
 
 .title_location h1 {
-	margin-left: 130px;
+	margin-left: 120px;
 }
 
 .text_location .location  {
-  margin-left: 130px;
+  margin-left: 12%;
+  margin-right: 10%;
 }
 
 .location p {
@@ -1097,21 +1172,6 @@ form textarea {
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
 
-.text_story .story {
-	margin-left: 100px;
-	width: 40%;
-	line-height: 40px;
-}
 
-.chef .chef_img img {
-	width: 85%;
-	margin-left:20%;
-}
-
-.chef .chef_story {
-	margin-left: 90px;
-	width: 40%;
-	line-height: 40px;
-}
 
 }
