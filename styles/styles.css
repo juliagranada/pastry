@@ -1,8 +1,9 @@
 
 body {
 	padding: 0;
-	margin: 0 auto;
-	width: 100%;
+	margin: 0 ;
+	box-sizing: border-box;
+	max-width: 100%;
 	color: darkgray;
 	background-color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -11,9 +12,8 @@ body {
 	background: linear-gradient(108deg, rgba(0,0,0,1) 43%, rgba(10,2,29,1) 69%, rgba(7,3,38,1) 100%);
 }
 
-
 .nav_sections {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -25,27 +25,30 @@ body {
 	display: inline;
 	width: 55%;
 	height: 120%;
-	margin-left: 12%;
+	margin-left: 3%;
 }
 
 
 .nav_bar {
-	width: 60%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: flex-end;
 	justify-content: flex-end;
 	column-gap: 30px;
+	margin-right: 3%;
 
 }
 
-
+.nav_sections .nav_bar ul {
+	display: block;
+  margin-right: 0px;
+}
 
 .nav_sections a {
 	color: white;
 	font-size: 20px;
-	margin-right: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 
@@ -81,7 +84,7 @@ body {
 
 .main {
 	display: flex;
-	width: 100%;
+	width: 80%;
 	flex-direction: column;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -89,14 +92,15 @@ body {
 
 .main .img img {
 	margin-top: 10px;
+	 width: 100%;
 }
 
-.content p {
+.content {
+	width: 100%;
 	line-height: 30px;
 	color: #7b727f;
 	margin-top: 20px;
 	font-size: 20px;
-	margin-right: 20%;
 }
 
 
@@ -111,10 +115,10 @@ body {
 	margin-bottom: 50px;
 }
 
-.grid {
+.container {
 	display: flex;
 	flex-direction: row;
-	column-gap: 25%;
+	column-gap: 15%;
 	row-gap: 30px;
 	flex-wrap: wrap;
   justify-content: center;
@@ -124,30 +128,15 @@ body {
 
 
 
-.grid img {
+.container img {
 	background-color: black;
 	border: 3px solid #2b262d;
 	margin-bottom: 10px;
 }
 
-.grid1 {
-	grid-area: bread;
 
-}
 
-.grid2 {
-	grid-area: pastries;
-}
-
-.grid3 {
-	grid-area: sandwiches;
-}
-
-.grid4 {
-	grid-area: cookies;
-}
-
-.grid a {
+.container a {
 	color: #2b262d;
 	font-size: 20px;
 	text-decoration: none;
@@ -155,20 +144,20 @@ body {
 	
 }
 
-.grid a:hover {
+.container a:hover {
 	color: #f4c277;
 }
 
-.container {
+/*.container {
 	margin-top: 100px;
-}
+}*/
 
 /* PAGE: ABOUT */
 
  .story h1 {
 	text-align: left;
 	margin-top: 100px;
-	margin-left: 20%;	
+	padding-left: 25%;	
 }
 
 
@@ -178,26 +167,24 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	width: 100%;
+	width: 80%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	margin-top: 50px;
 	margin-bottom: 80px;
+	margin-left: 10%;
 } 
 
 .text_story .story {
-	margin-left: 10%;
-	width: 40%;
+	width: 50%;
 	line-height: 40px;
 	text-align: right;
-	margin-right:3%;
 }
 
 .text_story .p_img img {
-	width: 80%;
-	margin-left: 0%;
-	margin-right: 50px;
+	width: 95%;
+	margin-left: 5%;
 	border: 3px solid #2b262d;
 }
 
@@ -206,25 +193,23 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 }
 
 .chef .chef_img img {
-	width: 80%;
+	width: 95%;
 	margin-top: 30px;
-	margin-left: 20%;
-	margin-right: 10px;
+	margin-right: 5%;
 	border: 3px solid #2b262d;
 }
 
 .chef .chef_story {
-	margin-left: 3%;
-	width: 40%;
+	width: 50%;
 	margin-top: 30px;
 	line-height: 40px;
-	margin-right:0%;
 	font-size: 20px;
 }
 
@@ -270,8 +255,10 @@ body {
 
 
 .video {
+	width: 70%;
 	margin-top: 150px;
-	margin-left: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 
 }
 
@@ -351,7 +338,7 @@ body {
 }
 
 .text_location .map {
-	width: 90%;
+	width: 80%;
 	margin-top: 50px;
 	margin-left: 15%;
 }
@@ -389,9 +376,9 @@ body {
 	margin-top: 50px;
 }
 
-form p {
+/*form p {
 	padding: 5px 0;
-}
+}*/
 
 form input,
 textarea {
@@ -455,6 +442,8 @@ form textarea {
     "b5 b6"
     "b7 b8";
 }
+
+
 
 .grid_breads img {
 	background-color: black;
@@ -708,41 +697,57 @@ form textarea {
 
 .nav_sections {
 	width: 80%;
+	height: 50%;
+	margin-right: 0%;
 }
 
-.nav_sections .title1 img {
-	width: 50%;
-	height: 80%;
-}
 
 .nav_sections a {
 	font-size: 15px;
-	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
 }
  .title1 {
- 	width: 40%;
+ 	width: 30%;
  }
 
-.nav_bar {
-  width: 60%;
+ .nav_sections .title1 img {
+  width: 100%;
+  height: 100%;
   align-items: flex-end;
 }
 
+.nav_bar {
+  width: 100%;
+  margin-right: 0%;
+}
+
+.nav_sections .nav_bar ul {
+  width: 100%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+
 .main {
-	width: 100%;
+	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
 .content p {
+	width: 100%;
 	line-height: 30px;
 	margin-right: 20%;
 	text-align: center;
 }
 
 
-.home_title h1 {
-	margin-left: 25%;
+.container {
+	width: 60%;
+	flex-direction: column;
+	margin-right: 20%;
+	margin-left: 20%;
 }
 
 	.story h1 {
@@ -830,7 +835,7 @@ form textarea {
 	margin-top: 30px;
 	width: 90%;
 	overflow:hidden;
-  padding-bottom:200px; 
+ /* padding-bottom:200px; */
   position:relative;
   height:0;
 }
@@ -1048,23 +1053,47 @@ form textarea {
 @media only screen and (min-width: 990px) and (max-width: 1199px) {
 
 .nav_sections {
-	width: 80%;
-}
+  width: 80%;
+  height: 80px;
+  margin-right: 10%;
+  margin-left: 10%;
+  }
 
 .nav_sections .title1 img {
-	width: 60%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 }
 
 .nav_bar {
-  width: 70%;
+  width: 100%;
 }
 
-.grid {
-	column-gap: 20%;
-	row-gap: 30%;
+.main {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.main .img img {
+	 width: 100%;
+}
+
+.content {
+	width: 100%;
+}
+
+.home_title {
+  width: 80%;
   margin-left: 10%;
-  margin-right: 10%;
+}
+
+.home_title h1 {
+	margin-left: 0%;
+}
+
+.container {
+	column-gap: 10%;
+	margin-left: 10%;
 }
 
 
