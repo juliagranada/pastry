@@ -124,13 +124,13 @@ body {
   margin-left:20%;
 }
 
-.container1,
-.container3 {
+.section1,
+.section3 {
 	margin-left: 10%;
 }
 
-.container2,
-.container4 {
+.section2,
+.section4 {
 	margin-left: 10%;
 }
 
@@ -141,13 +141,11 @@ body {
 }
 
 
-
 .container a {
 	color: #2b262d;
 	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
-	
 }
 
 .container a:hover {
@@ -756,6 +754,14 @@ form textarea {
 	margin-left: 20%;
 }
 
+.section1,
+.section2,
+.section3,
+.section4 {
+	margin-left: 0%;
+}
+
+
 .container_apps {
 	width: 80%;
 	margin-left: 10%;
@@ -1099,16 +1105,23 @@ form textarea {
 }
 
 .container {
+  display: flex;
   width: 80%;
   flex-direction: row;
-  margin-left: 10%;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  margin-left:10%;
   margin-right: 10%;
-
 }
 
-.container1,
-.container3 {
-	margin-left: 10%;
+.section1,
+.section3 {
+	margin-left: 0%;
+}
+
+.section2,
+.section4 {
+	margin-left: 0%;
 }
 
 
