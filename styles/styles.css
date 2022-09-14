@@ -115,40 +115,38 @@ body {
 	margin-bottom: 50px;
 }
 
-.container {
+.products_flex{
   display: flex;
   width: 60%;
   flex-direction: row;
   row-gap: 30px;
+  column-gap: 10%;
   flex-wrap: wrap;
-  margin-left:20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: space-evenly;
 }
 
-.section1,
-.section3 {
-	margin-left: 10%;
-}
-
-.section2,
-.section4 {
-	margin-left: 10%;
-}
-
-.container img {
+.products_flex img {
 	background-color: black;
 	border: 3px solid #2b262d;
 	margin-bottom: 10px;
 }
 
+/*.p_f1,
+.p_f3 {
+	margin-left: 8%;
+}*/
 
-.container a {
+
+.products_flex a {
 	color: #2b262d;
 	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.container a:hover {
+.products_flex a:hover {
 	color: #f4c277;
 }
 
@@ -412,12 +410,17 @@ form textarea {
 }
 
 
+
 /* SECTION:  BREADS */
 
+.back {
+  display: inline;
+  margin-left: 5%;
+}
 
 .back a {
 	display: inline-block;
-	margin-left: 120px;
+	margin-left: 0%;
 	margin-top: 100px;
 	color: #2b262d;
 	font-size: 20px;
@@ -459,11 +462,13 @@ form textarea {
 .grid_breads img {
 	background-color: black;
 	border: 3px solid #2b262d;
-	margin-left: 25%;
+	margin-left: 5%;
 }
 
 .b1 { 
-	grid-area: b1;
+  grid-area: b1;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .b2 { 
@@ -696,7 +701,7 @@ form textarea {
 
 /* MOBILE */
 
-@media only screen and (min-width: 480px) and (max-width: 989px) {
+@media only screen and (max-width: 480px) {
 
 .nav_sections {
 	width: 80%;
@@ -747,18 +752,19 @@ form textarea {
 }
 
 
-.container {
-	width: 80%;
+.products_flex {
+	width: 60%;
 	flex-direction: column;
+	align-content: space-evenly;
 	margin-right: 20%;
 	margin-left: 20%;
 }
 
-.section1,
-.section2,
-.section3,
-.section4 {
-	margin-left: 0%;
+.p_f1,
+.p_f2,
+.p_f3,
+.p_f4 {
+  margin-left: 0%;
 }
 
 
@@ -983,7 +989,7 @@ form textarea {
 
 .back a {
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 5%;
 	margin-top: 40px;
 	color: #2b262d;
 }
@@ -1063,7 +1069,7 @@ form textarea {
 
 /* TABLET */
 
-@media only screen and (min-width: 990px) and (max-width: 1199px) {
+@media only screen and  (max-width: 991px) {
 
 .nav_sections {
   width: 80%;
@@ -1104,23 +1110,13 @@ form textarea {
 	margin-left: 0%;
 }
 
-.container {
-  display: flex;
-  width: 80%;
-  flex-direction: row;
-  row-gap: 20px;
-  flex-wrap: wrap;
-  margin-left:10%;
+.products_flex{
+  margin-left: 10%;
   margin-right: 10%;
 }
 
-.section1,
-.section3 {
-	margin-left: 0%;
-}
-
-.section2,
-.section4 {
+.p_f1,
+.p_f3 {
 	margin-left: 0%;
 }
 
@@ -1249,7 +1245,8 @@ form textarea {
 
 /* DESKTOP */
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 1200px)  {
+
 
 
 
