@@ -118,12 +118,11 @@ body {
   display: flex;
   width: 60%;
   flex-direction: row;
-  row-gap: 30px;
-  column-gap: 10%;
   flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
   margin-left: 20%;
   margin-right: 20%;
-  align-items: space-evenly;
 }
 
 .products_flex img {
@@ -131,11 +130,6 @@ body {
   border: 3px solid #2b262d;
   margin-bottom: 10px;
 }
-
-/*.p_f1,
-.p_f3 {
-  margin-left: 8%;
-}*/
 
 .products_flex a {
   color: #2b262d;
@@ -698,7 +692,7 @@ form textarea {
 
 /* MOBILE */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
 .nav_sections {
   width: 80%;
@@ -1075,7 +1069,7 @@ form textarea {
 
 /* TABLET */
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 481px) (max-width: 990px) {
 
 .nav_sections {
   width: 80%;
@@ -1116,16 +1110,17 @@ form textarea {
   margin-left: 0%;
 }
 
-.products_flex{
-  margin-left: 10%;
-  margin-right: 10%;
+.products_flex {
+  width: 50%;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
-.p_f1, {
+.p_f1,
+.p_f3 {
   margin-left: 0%;
 }
-
-
 
 
 
@@ -1242,7 +1237,7 @@ form textarea {
 
 /* DESKTOP */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
 
 
 
