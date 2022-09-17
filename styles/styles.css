@@ -6,6 +6,7 @@ body {
 	max-width: 100%;
 	color: darkgray;
 	background-color: black;
+	font-family: 'Cinzel', serif;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
 	background: rgb(0,0,0);
@@ -18,7 +19,7 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin-right: 10%;
-	margin-left: 10%;
+	margin-left: 10%
 	}
 
 .title1 img {
@@ -28,7 +29,6 @@ body {
 	margin-left: 3%;
 }
 
-
 .nav_bar {
 	width: 80%;
 	display: flex;
@@ -37,8 +37,7 @@ body {
 	align-items: flex-end;
 	justify-content: flex-end;
 	column-gap: 30px;
-	margin-right: 3%;
-
+	margin-right: 0%;
 }
 
 .nav_sections .nav_bar ul {
@@ -52,10 +51,7 @@ body {
 	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
-
 }
-
-
 
 
 /* TRANSITION */
@@ -70,8 +66,7 @@ body {
   transition-property: color;
   transition-duration: 0,2s;
   transition-timing-function: ease-in;
-  transition-delay: 0s;
-  
+  transition-delay: 0s;  
 }
 
 .nav_sections a:hover, a:focus {
@@ -100,30 +95,66 @@ body {
 	line-height: 30px;
 	color: #7b727f;
 	margin-top: 20px;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 }
 
 
-
 /* PRODUCTS SECTION */
 
+/* ANIMATION */
 
-.home_title h1 {
-	text-align: left;
+.contendor {
+	margin: auto;
+	display: table;
+}
+
+h1 {
+	margin-left: 10%;
+}
+
+.contenedor h1 {
 	margin-left: 10%;
 	margin-top: 40px;
 	margin-bottom: 50px;
+	float: left;
+	color: #c19770;
+	position: relative;
 }
 
-.products_flex{
+h1 span {
+	position: absolute;
+	right: 0;
+	width: 0;
+	background-color: black;
+	border-left: 2px solid #c19770;
+
+	animation: typewriter 5s infinite alternate steps(20);
+}
+
+@keyframes typewriter {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0;
+	}
+}
+
+
+
+
+
+
+.products_flex {
   display: flex;
-  width: 60%;
+  width: 70%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 30px;
-  margin-left: 20%;
-  margin-right: 20%;
+  column-gap: 20%;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .products_flex img {
@@ -131,9 +162,6 @@ body {
 	border: 3px solid #2b262d;
 	margin-bottom: 10px;
 }
-
-
-
 
 .products_flex a {
 	color: #2b262d;
@@ -145,6 +173,7 @@ body {
 .products_flex a:hover {
 	color: #f4c277;
 }
+
 
 /* FOOTER */
 
@@ -180,8 +209,6 @@ body {
 	margin-top: 100px;
 	padding-left: 25%;	
 }
-
-
 
 .text_story {
 	display: flex;
@@ -274,7 +301,6 @@ body {
 	text-decoration: underline;
 }
 
-
 .video {
 	width: 70%;
 	margin-top: 150px;
@@ -282,7 +308,6 @@ body {
 	margin-right: 15%;
 
 }
-
 
 
 /* PAGE: ORDER */
@@ -331,6 +356,7 @@ body {
 	margin-top: 20px;
 }
 
+
 /* PAGE: LOCATION */
 
 .title_location h1 {
@@ -376,7 +402,6 @@ body {
 	text-decoration: none;
 }
 
-
 .text_contact {
 	margin-left: 10%;
 	margin-right: 12%;
@@ -404,7 +429,6 @@ form textarea {
 	display: inline-block;
 	text-align: center;
 }
-
 
 
 /* SECTION:  BREADS */
@@ -487,7 +511,6 @@ form textarea {
 .b8 { 
 	grid-area: b8; 
 }
-
 
 
 /* SECTION:  PASTRIES */
@@ -618,7 +641,6 @@ form textarea {
 .s8 { 
 	grid-area: s8; 
 }
-
 
 
 /* SECTION: COOKIES */
@@ -873,7 +895,7 @@ form textarea {
 
 .video  {
 	margin-left:5%;
-	margin-top: 100%;
+	margin-top: 70%;
 	width: 90%;
 	height: 200;
 }
@@ -1188,7 +1210,6 @@ form textarea {
   display: inline-block;
   margin-left: 33%;
   margin-top: 7%;
-
 }
 
 .menu {
@@ -1207,7 +1228,7 @@ form textarea {
 
 .video {
 	width: 90%;
-	margin-top: 25%;
+	margin-top: 15%;
 	margin-left: 5%;
 }
 
@@ -1366,5 +1387,8 @@ width: 90%;
 }
 
 }
+
+
+
 
 
