@@ -22,10 +22,14 @@ body {
 	margin-left: 10%
 	}
 
+.title1 {
+	margin-left: 0%;
+}
+
 .title1 img {
 	display: inline;
 	width: 55%;
-	height: 120%;
+	height: 100%;
 	margin-left: 3%;
 }
 
@@ -37,7 +41,7 @@ body {
 	align-items: flex-end;
 	justify-content: flex-end;
 	column-gap: 30px;
-	margin-right: 0%;
+	margin-right: 2%;
 }
 
 .nav_sections .nav_bar ul {
@@ -70,7 +74,8 @@ body {
 }
 
 .nav_sections a:hover, a:focus {
-  color: #f4c277;
+  color: #c19770;
+  font-family: 'Cinzel', serif;
   background-size: 100% 2px;
 }
 
@@ -90,7 +95,7 @@ body {
 	 width: 100%;
 }
 
-.content {
+.content p {
 	width: 100%;
 	line-height: 30px;
 	color: #7b727f;
@@ -110,15 +115,17 @@ body {
 }
 
 h1 {
-	margin-left: 10%;
+	margin-left: 9%;
 }
 
 .contenedor h1 {
-	margin-left: 10%;
+	margin-left: 9%;
 	margin-top: 40px;
 	margin-bottom: 50px;
 	float: left;
 	color: #c19770;
+	font-family: 'Cinzel', serif;
+	font-size: 30px;
 	position: relative;
 }
 
@@ -140,9 +147,6 @@ h1 span {
 		width: 0;
 	}
 }
-
-
-
 
 
 
@@ -171,7 +175,8 @@ h1 span {
 }
 
 .products_flex a:hover {
-	color: #f4c277;
+	color: #c19770;
+	font-family: 'Cinzel', serif;
 }
 
 
@@ -719,7 +724,7 @@ form textarea {
 .nav_sections {
 	width: 80%;
 	height: 50%;
-	margin-right: 0%;
+	margin-left: 3%;
 }
 
 .nav_sections a {
@@ -733,7 +738,7 @@ form textarea {
  }
 
  .nav_sections .title1 img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   align-items: flex-end;
 }
@@ -1112,6 +1117,10 @@ form textarea {
   margin-left: 10%;
   margin-top: 4%;
   }
+
+.title1 {
+	margin-left: 0%;
+}
 
 .nav_sections .title1 img {
 	width: 100%;

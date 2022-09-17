@@ -9,7 +9,7 @@
   justify-content: flex-end;
   column-gap: 10px;
   width: 80%;
-  margin-right: 160px; }
+  margin-right: 10%; }
   .nav_sections a {
     color: #2b262d;
     font-size: 20px;
@@ -20,13 +20,6 @@
     transition-duration: 1s;
     transition-timing-function: ease-in;
     transition-delay: 0s; }
-    .nav_sections a a:hover {
-      color: #5b276b;
-      color: #2b262d; }
-      .nav_sections a a:hover li {
-        display: inline;
-        text-decoration: none;
-        text-transform: uppercase; }
 
 .title {
   display: flex;
@@ -34,10 +27,14 @@
   width: 100%;
   justify-content: flex-end; }
 
-.title1 {
-  margin-left: 200px;
-  display: inline;
-  width: 50%; }
+  .title1 {
+    margin-left: 0%;
+    display: inline;
+    width: 40%; }
+
+  .title1 img {
+    height: 100%;
+  }
 
 a {
   color: inherit; }
@@ -55,7 +52,7 @@ a:hover {
   margin-right: 120px; }
 
 .content p {
-  line-height: 20px;
+  line-height: 30px;
   color: #7b727f;
   margin-top: 20px; }
 
@@ -283,7 +280,10 @@ a a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 200px;
-  grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8"; }
+  grid-template-areas: "b1 b2"
+ "b3 b4"
+ "b5 b6"
+ "b7 b8"; }
   .grid_breads img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -331,7 +331,10 @@ a a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 200px;
-  grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8"; }
+  grid-template-areas: "p1 p2"
+ "p3 p4"
+ "p5 p6"
+ "p7 p8"; }
   .grid_pastries img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -379,7 +382,10 @@ a a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 200px;
-  grid-template-areas: "s1 s2" "s3 s4" "s5 s6" "s7 s8"; }
+  grid-template-areas: "s1 s2"
+ "s3 s4"
+ "s5 s6"
+ "s7 s8"; }
   .grid_sandwiches img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -427,7 +433,10 @@ a a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 200px;
-  grid-template-areas: "c1 c2" "c3 c4" "c5 c6" "c7 c8"; }
+  grid-template-areas: "c1 c2"
+ "c3 c4"
+ "c5 c6"
+ "c7 c8"; }
   .grid_cookies img {
     background-color: black;
     border: 3px solid #2b262d; }
@@ -461,10 +470,10 @@ a a:hover {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .title1 {
     display: inline;
-    margin-left: 40px;
+    margin-left: 0%;
     width: 100%; }
   .nav_sections {
-    margin-right: 30px; }
+    margin-right: 0%; }
   .main {
     margin-left: 30px; }
   h2 {
@@ -633,7 +642,7 @@ dt dd {
 /* TABLET */
 @media only screen and (min-width: 481px) and (max-width: 990px) {
   .title1 {
-    margin-left: 100px; }
+    margin-left: 0%; }
   .main {
     margin-left: 60px; }
   h2 {
