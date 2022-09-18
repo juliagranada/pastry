@@ -2,40 +2,17 @@ $color_hover: #c19770;
 $border_image: 3px solid #2b262d;
 
 
-.nav_sections {
-	width: 80%;
-	height: 90%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	margin-right: 10%;
-	margin-left: 10%
-	}
-	.nav_sections .nav_bar ul {
-		display: block;
-		margin-right: 0px;
-		margin-bottom: 0%;
-		}
-		.nav_sections .nav_bar ul a {
-			color: #7b727f;
-		}
-	.nav_sections a {
-		font-size: 20px;
-		padding-left: 5px
-		text-decoration: none;
-		text-transform: uppercase;
-		}
 
 .title1 {
 	margin-left: 0%;
-}
+
 	.title1 img {
 		display: inline;
 		width: 55%;
 		height: 90%;
 		margin-left: 3%;
 	}
-
+}
 .nav_bar {
 	width: 80%;
 	display: flex;
@@ -45,15 +22,39 @@ $border_image: 3px solid #2b262d;
 	justify-content: flex-end;
 	column-gap: 30px;
 	margin-right: 2%;
+	font-family: 'Edu QLD Beginner', cursive;
 }
-	
 
+.nav_sections {
+	width: 80%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-right: 10%;
+	margin-left: 10%
+	.nav_sections a {
+		font-size: 20px;
+		padding-left: 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.nav_sections .nav_bar ul {
+		display: block;
+		  margin-right: 0px;
+		  margin-bottom: 0%;
+		}
+		.nav_sections .nav_bar ul a {
+			color: #7b727f;
+		}
+}
 
 /* TRANSITION */
 
-.nav_sections a {
+.nav_sections .nav_bar ul a {
+	
   background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
+ 	background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size .3s;
@@ -61,13 +62,12 @@ $border_image: 3px solid #2b262d;
   transition-duration: 1s;
   transition-timing-function: ease-in;
   transition-delay: 0s;  
-}
-	.nav_sections a:hover, a:focus {
-	  color: $color_hover;
+	.nav_sections .nav_bar ul a:hover, a:focus {
+	  color: $color_hover;  
 	  font-family: 'Cinzel', serif;
 	  background-size: 100% 2px;
 	}
-
+}
 
 /* MAIN */
 
@@ -77,18 +77,18 @@ $border_image: 3px solid #2b262d;
 	flex-direction: column;
 	margin-left: 10%;
 	margin-right: 10%;
-}
+
 	.main .img img {
 		margin-top: 10px;
 		 width: 100%;
 	}
-
+}
 .content p {
 	width: 100%;
 	line-height: 30px;
 	color: #7b727f;
 	margin-top: 20px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Maitree', serif;
 	font-size: 20px;
 }
 
@@ -100,21 +100,19 @@ $border_image: 3px solid #2b262d;
 .contendor {
 	margin: auto;
 	display: table;
-}
 	.contenedor h1 {
 		margin-left: 9%;
 		margin-top: 40px;
 		margin-bottom: 50px;
 		float: left;
-		color: #c19770;
+		color: $color_hover;
 		font-family: 'Cinzel', serif;
 		font-size: 30px;
 		position: relative;
 	}
-
+}
 h1 {
 	margin-left: 9%;
-}
 	h1 span {
 		position: absolute;
 		right: 0;
@@ -124,16 +122,15 @@ h1 {
 
 		animation: typewriter 5s infinite alternate steps(20);
 	}
-
-@keyframes typewriter {
-	from {
-		width: 100%;
-	}
-	to {
-		width: 0;
-	}
 }
-
+	@keyframes typewriter {
+		from {
+			width: 100%;
+		}
+		to {
+			width: 0;
+		}
+	}
 
 
 .products_flex {
@@ -145,7 +142,6 @@ h1 {
   justify-content: center;
   margin-left: 15%;
   margin-right: 15%;
-}
 	.products_flex img {
 		background-color: black;
 		border: $border_image;
@@ -153,6 +149,7 @@ h1 {
 	}
 	.products_flex a {
 		color: #2b262d;
+		font-family: 'Edu QLD Beginner', cursive;
 		font-size: 20px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -161,7 +158,7 @@ h1 {
 			color: $color_hover;
 			font-family: 'Cinzel', serif;
 		}
-
+}
 
 /* FOOTER */
 
@@ -194,8 +191,9 @@ h1 {
 
  .story h1 {
 	text-align: left;
-	margin-top: 100px;
+	margin-top: 80px;
 	padding-left: 25%;	
+	font-family: 'Cinzel', serif;
 }
 
 .text_story {
@@ -204,13 +202,12 @@ h1 {
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	width: 80%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Maitree', serif;
 	font-weight: 300;
 	font-size: 20px;
 	margin-top: 50px;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 	margin-left: 10%;
-} 
 	.text_story .story {
 		width: 50%;
 		line-height: 40px;
@@ -218,10 +215,14 @@ h1 {
 	}
 	.text_story .p_img img {
 		width: 95%;
+		height: 80%;
 		margin-left: 5%;
 		border: $border_image;
 	}
-
+	.story .about_title h1 {
+		margin-top: 0px;
+	}
+}
 .chef {
 	display: flex;
 	flex-direction: row;
@@ -229,22 +230,21 @@ h1 {
 	justify-content: flex-start;
 	width: 80%;
 	margin-left: 10%;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
-}
+	font-family: 'Maitree', serif;
+	.chef .chef_img img {
+		width: 95%;
+		height: 80%;
+		margin-top: 30px;
+		margin-right: 5%;
+		border: $border_image;
+	}
 	.chef .chef_story {
 		width: 50%;
 		margin-top: 30px;
 		line-height: 40px;
 		font-size: 20px;
 	}
-	.chef .chef_img img {
-		width: 95%;
-		margin-top: 30px;
-		margin-right: 5%;
-		border: $border_image;
-	}
-
+}
 
 
 /* PAGE: MENU */
@@ -253,6 +253,7 @@ h1 {
 	text-align: left;
 	margin-top: 50px;
 	margin-left: 12%;
+	font-family: 'Cinzel', serif;
 	text-decoration: none;	
 }
 
@@ -262,7 +263,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .menu_column1,
@@ -286,6 +287,11 @@ h1 {
 	text-decoration: underline;
 }
 
+.sub_title2,
+.sub_title3 {
+	text-decoration: underline;
+}
+
 .video {
 	width: 70%;
 	margin-top: 150px;
@@ -300,18 +306,24 @@ h1 {
 	margin-top: 50px;
 	margin-left: 12%;
 	text-decoration: none;	
+	font-family: 'Cinzel', serif;
 }
 
 .deli h2,
 .da h2 {
 	margin-top: 20px;
+	font-family: 'Cinzel', serif;
 }
 
 .text1 {
 	margin-left: 12%;
 	margin-right: 150px;
 	margin-bottom: 30px;
-	font-size: 20px;
+	font-size: 25px;
+}
+
+.text4 {
+	font-size: 25px;
 }
 
 .orderflex {
@@ -327,15 +339,19 @@ h1 {
 
 .orderflex1 {
   width: 97%;
-  font-size: 20px;
+  font-size: 25px;
   margin-left:3%
+	.orderflex1 h2 {
+		font-family: 'Cinzel', serif;
+	}
 }
-
 .orderflex2 {
   width: 97%;
   margin-right: 3%;
+	.orderflex2 h2 {
+		font-family: 'Cinzel', serif;
+	}
 }
-
 .deli h3 {
 	margin-top: 20px;
 }
@@ -347,6 +363,7 @@ h1 {
 	text-align: left;
 	margin-left: 10%;
 	margin-top: 50px;
+	font-family: 'Cinzel', serif;
 }
 
 .text_location {
@@ -357,22 +374,22 @@ h1 {
 	margin-left: 10%;
 	font-size: 20px;
 	line-height: 30px;
-}
 	.text_location .location {
 	  width: 100%;
 	  justify-content: flex-start;
+	}
+	.text_location li{
+		margin-bottom: 10px;
 	}
 	.text_location .map {
 	  width: 80%;
 	  margin-top: 50px;
 	  margin-left: 10%;
 	}
-	.text_location li{
-		margin-bottom: 10px;
-		}
-
+}
 .store_info h3 {
 	margin-top: 30px;
+	font-family: 'Cinzel', serif;
 }
 
 
@@ -383,6 +400,7 @@ h1 {
 	margin-left: 10%;
 	margin-top: 60px;
 	text-decoration: none;
+	font-family: 'Cinzel', serif;
 }
 
 .text_contact {
@@ -395,6 +413,7 @@ h1 {
 .form {
   text-align: center;
   margin-top: 50px;
+  font-family: 'Cinzel', serif;
 }
 
 form input,
@@ -420,22 +439,22 @@ form textarea {
 	display: inline-block;
 	margin-left: 5%;
 	margin-top: 5%;
-	color: #2b262d;
+	color: #7b727f;
 	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
-}
 	.back a:hover {
 		color: $color_hover;
 		font-family: 'Cinzel', serif;
 	}
-
+}
 .bread_description {
-	width: 90%;
-	margin-left: 5%;
-	margin-top: 5%;
-	line-height: 30px;
-	font-size: 20px;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+	line-height: 35px;
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 30px;
 }
 
 .grid_breads {  
@@ -453,13 +472,12 @@ form textarea {
     "b3 b4"
     "b5 b6"
     "b7 b8";
-}
 	.grid_breads img {
 		background-color: black;
 		border: $border_image;
 		margin-left: 5%;
 	}
-
+}
 .b1 { 
   grid-area: b1;
   margin-right: 0%;
@@ -498,11 +516,12 @@ form textarea {
 /* SECTION:  PASTRIES */
 
 .pastry_description {
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
 	margin-top: 5%;
-	line-height: 30px;
-	font-size: 20px;
+	line-height: 35px;
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 30px;
 }
 
 .grid_pastries {  
@@ -519,13 +538,13 @@ form textarea {
     "p3 p4"
     "p5 p6"
     "p7 p8";
-}
+
 	.grid_pastries img {
 	  background-color: black;
 	  border: $border_image;
 	  margin-left: 25%
 	}
-
+}
 .p1 { 
 	grid-area: p1;
 }
@@ -562,11 +581,12 @@ form textarea {
 /* SECTION: SANDWICHES */
 
 .sandwich_description {
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
 	margin-top: 5%;
-	line-height: 30px;
-	font-size: 20px;
+	line-height: 35px;
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 30px;
 }
 
 .grid_sandwiches {  
@@ -583,13 +603,12 @@ form textarea {
     "s3 s4"
     "s5 s6"
     "s7 s8";
-}
 	.grid_sandwiches img {
 	  background-color: black;
 	  border: $border_image;
 	  margin-left: 25%
 	}
-
+}
 .s1 { 
 	grid-area: s1;
 }
@@ -626,11 +645,12 @@ form textarea {
 /* SECTION: COOKIES */
 
 .cookie_description {
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
 	margin-top: 5%;
-	line-height: 30px;
-	font-size: 20px;
+	line-height: 35px;
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 30px;
 }
 
 .grid_cookies {  
@@ -647,13 +667,12 @@ form textarea {
     "c3 c4"
     "c5 c6"
     "c7 c8";
-}
 	.grid_cookies img {
 	  background-color: black;
 	  border: $border_image;
 	  margin-left: 25%
 	}
-
+}
 .c1 { 
 	grid-area: c1;
 }
@@ -699,7 +718,6 @@ form textarea {
 	width: 80%;
 	height: 50%;
 	margin-left: 3%;
-}
 	.nav_sections a {
 		font-size: 15px;
 		padding-left: 10px;
@@ -711,22 +729,21 @@ form textarea {
 	  height: 100%;
 	  align-items: flex-end;
 	}
-
- .title1 {
+	.nav_sections .nav_bar ul {
+	  width: 100%;
+	  margin-left: 0%;
+	  margin-bottom: 0%;
+	}
+}
+.title1 {
  	width: 30%;
- }
+}
 
- 
 .nav_bar {
   width: 100%;
   margin-right: 0%;
   justify-content: space-evenly;
 }
-	.nav_bar ul {
-	  width: 100%;
-	  margin-left: 0%;
-	  margin-bottom: 0%;
-	}
 
 .main {
 	width: 80%;
@@ -794,33 +811,30 @@ form textarea {
 	margin-left: 5%;
 	margin-top: 30px;
 	margin-bottom: 80px;
-} 
 	.text_story .story {
 		width: 100%;
 		text-align: center;
+
 	}
 	.text_story .p_img img {
 		width: 100%;
 		margin-left: 0%;
 	}
-
+}
 .chef {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 90%;
 	margin-left: 5%;
-}
+	.chef .chef_img img {
+		width: 100%;
+	}
 	.chef .chef_story {
 		width: 100%;
 		text-align: center;
 	}
-	.chef .chef_img img {
-		width: 100%;
-	}
-
-
-
+}
 /* MENU */
 
 .title_menu h1 {
@@ -870,7 +884,7 @@ form textarea {
 
 .video  {
 	margin-left:5%;
-	margin-top: 70%;
+	margin-top: 40%;
 	width: 90%;
 	height: 200;
 }
@@ -898,38 +912,40 @@ form textarea {
 	display: block;
   width: 90%;
   margin-left: 5%;
-}
-
-.orderflex1 {
-	width: 100%;
-}
 	.orderflex1 h2 {
 		margin-top: 30px;
 		margin-left: 2%;
 	}
-	.orderflex1 .text2,
-	.orderflex1 .text3  {
-		margin-left: 2%;
-	}
+}	
+.orderflex1 {
+	width: 100%;
 	.orderflex1 .deli h2 {
 		margin-left: 2%;
 		margin-top: 30px;
 	}
-
+}
 .orderflex2 {
 	width: 100%;
-}
-	.orderflex2 .text4 {
-		margin-left: 5%;
-	}
 	.orderflex2 h2 {
 		margin-top: 15px;
 		margin-left: 5%;
 	}
-	.orderflex2 .da h2 {
-		margin-top: 15px;
-		margin-left: 5%;
-	}
+}
+.orderflex1 .text2,
+.orderflex1 .text3  {
+	margin-left: 2%;
+}
+
+.orderflex2 .text4 {
+	margin-left: 5%;
+}
+
+
+
+.orderflex2 .da h2 {
+	margin-top: 15px;
+	margin-left: 5%;
+}
 
 .container_2 {
 	margin-left: 5%;
@@ -956,12 +972,12 @@ form textarea {
 	width: 80%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-}
 	.text_location .map {
 		width: 100%;
 		margin-left: 0%;
 		margin-top: 3%;
 	}
+}
 
 /* CONTACT */
 
@@ -982,11 +998,16 @@ form textarea {
 
 /* SECTION: BREADS */
 
+.back a {
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 40px;
+	color: #7b727f;
+}
 
 .bread_description {
-	width: 80%;
-	margin-left: 10%;
 	margin-top: 3%;
+	font-size: 20px;
 }
 
 .grid_breads {  
@@ -995,17 +1016,28 @@ form textarea {
 	flex-direction: column;
 	margin-left: 10%;
 	margin-top: 5%;
-}
 	.grid_breads img {
 	  margin-left: 0%;
 	}
+}
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7,
+.b8 {
+	margin-left: 15%;
+}
+
+
 
 /* SECTION: PASTRIES */
 
 .pastry_description {
-	width: 80%;
-	margin-left: 10%;
 	margin-top: 3%;
+	font-size: 20px;
 }
 
 .grid_pastries {  
@@ -1014,17 +1046,29 @@ form textarea {
 	flex-direction: column;
 	margin-left: 10%;
 	margin-top: 5%;
-}
 	.grid_pastries img {
 	  margin-left: 0%;
 	}
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8 {
+	margin-left: 15%;
+}
+
+
 
 /* SECTION: COOKIES */
 
 .cookie_description  {
-	width: 80%;
-	margin-left: 10%;
 	margin-top: 3%;
+	font-size: 20px;
 }
 
 .grid_cookies {  
@@ -1033,17 +1077,29 @@ form textarea {
 	flex-direction: column;
 	margin-left: 10%;
 	margin-top: 5%;
-}
 	.grid_cookies img {
 	  margin-left: 0%;
 	}
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8 {
+	margin-left: 15%;
+}
+
+
 
 /* SECTION: SANDWICHES */
 
 .sandwich_description  {
-	width: 80%;
-	margin-left: 10%;
 	margin-top: 3%;
+	font-size: 20px;
 }
 
 .grid_sandwiches {  
@@ -1052,10 +1108,22 @@ form textarea {
 	flex-direction: column;
 	margin-left: 10%;
 	margin-top: 5%;
-}
 	.grid_sandwiches img {
 	  margin-left: 0%;
 	}
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8 {
+	margin-left: 15%;
+}
+
 
 }
 
@@ -1070,17 +1138,17 @@ form textarea {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 4%;
-  }
-	.nav_sections .title1 img {
+  margin-top: 0%;
+  	.nav_sections .title1 img {
 		width: 100%;
 		height: 100%;
 	}
+}
 
 .title1 {
 	margin-left: 0%;
-	width: 0%;
 }
+
 
 .nav_bar {
   width: 100%;
@@ -1090,10 +1158,10 @@ form textarea {
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-}
 	.main .img img {
-		 width: 100%;
+		width: 100%;
 	}
+}
 
 .content {
 	width: 100%;
@@ -1102,10 +1170,10 @@ form textarea {
 .home_title {
   width: 80%;
   margin-left: 10%;
-}
 	.home_title h1 {
 		margin-left: 0%;
 	}
+}
 
 .products_flex {
   width: 60%;
@@ -1135,16 +1203,16 @@ form textarea {
 	margin-left: 5%;
 	margin-top: 2%;
 	margin-bottom: 80px;
-} 
 	.text_story .story {
 		width: 100%;
 		text-align: center;
-
+		font-size: 20px;
 	}
 	.text_story .p_img img {
 		width: 100%;
 		margin-left: 0%;
 	}
+}
 
 .chef {
 	display: flex;
@@ -1152,14 +1220,14 @@ form textarea {
 	justify-content: center;
 	width: 90%;
 	margin-left: 5%;
-}
+	.chef .chef_img img {
+		width: 100%;
+	}
 	.chef .chef_story {
 		width: 100%;
 		text-align: center;
 	}
-	.chef .chef_img img {
-		width: 100%;
-	}
+}
 
 
 /* MENU */
@@ -1208,7 +1276,6 @@ form textarea {
 .orderflex1 {
   width: 97%;
   font-size: 20px;
-  margin-left:0%
 }
 
 .orderflex2 {
@@ -1227,17 +1294,16 @@ form textarea {
   width: 100%;
 }
 
-.text_location .map {
-  width: 100%;
-  margin-left: 0%;
-  margin-top: 3%;
-}
-
 .location p {
   width: 100%;
   margin-left: 0%;
 }
 
+.text_location .map {
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 3%;
+}
 
 
 /* CONTACT */
@@ -1259,13 +1325,15 @@ form textarea {
 /* SECTION: BREADS */
 
 .back a {
-	margin-left: 0%;
+	margin-left: 5%;
+	margin-top: 40px;
 }
 
 .bread_description {
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 3%;
+	font-size: 25px;
 }
 
 .grid_breads {  
@@ -1275,10 +1343,10 @@ form textarea {
 	margin-left: 5%;
 	margin-top: 5%;
 	align-items: center;
-}
 	.grid_breads img {
-	  margin-left: 0%;
-	}
+		  margin-left: 0%;
+		}
+}
 
 /* SECTION: PASTRIES */
 
@@ -1286,6 +1354,7 @@ form textarea {
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 3%;
+	font-size: 25px;
 }
 
 .grid_pastries {  
@@ -1295,10 +1364,10 @@ form textarea {
 	margin-left: 5%;
 	margin-top: 5%;
 	align-items: center;
-}
 	.grid_pastries img {
-	  margin-left: 0%;
+		 margin-left: 0%;
 	}
+}
 
 /* SECTION: COOKIES */
 
@@ -1306,6 +1375,7 @@ form textarea {
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 3%;
+	font-size: 25px;
 }
 
 .grid_cookies {  
@@ -1315,10 +1385,10 @@ form textarea {
 	margin-left: 5%;
 	margin-top: 5%;
 	align-items: center;
-}
 	.grid_cookies img {
-	  margin-left: 0%;
+	  	margin-left: 0%;
 	}
+}
 
 /* SECTION: SANDWICHES */
 
@@ -1326,6 +1396,7 @@ form textarea {
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 3%;
+	font-size: 25px;
 }
 
 .grid_sandwiches {  
@@ -1335,14 +1406,9 @@ width: 90%;
 	margin-left: 5%;
 	margin-top: 5%;
 	align-items: center;
-}
 	.grid_sandwiches img {
-	  margin-left: 0%;
+	  	margin-left: 0%;
 	}
-
 }
 
-
-
-
-
+}
