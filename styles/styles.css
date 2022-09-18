@@ -297,7 +297,7 @@ h1 span {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
-  font-family: 'Cinzel', serif;
+  font-family: 'Maitree', serif;
 }
 
 .menu_column1,
@@ -418,6 +418,7 @@ h1 span {
 .text_location .location{
   width: 100%;
   justify-content: flex-start;
+  font-family: 'Maitree', serif;
 }
 
 .store_info h3 {
@@ -767,7 +768,7 @@ form textarea {
 .nav_sections {
 	width: 80%;
 	height: 50%;
-	margin-left: 3%;
+	margin-left: 12%;
 }
 
 .nav_sections a {
@@ -798,6 +799,11 @@ form textarea {
   margin-bottom: 0%;
 }
 
+.nav_sections .nav_bar ul a {
+	color: #928a96;
+}
+
+
 .main {
 	width: 80%;
 	margin-left: 10%;
@@ -807,9 +813,13 @@ form textarea {
 .content p {
 	width: 100%;
 	line-height: 30px;
-	font-size: 17px;
+	font-size: 20px;
 	margin-right: 20%;
 	text-align: center;
+}
+
+.contenedor h1 {
+	margin-left: 10%;
 }
 
 .products_flex {
@@ -937,13 +947,13 @@ form textarea {
 
 .sub_title3 h2 {
 	margin-left: 0%;
-	margin-top: 25%;
+	margin-top: 10%;
 	text-decoration: underline;
 }
 
 .video  {
 	margin-left:5%;
-	margin-top: 40%;
+	margin-top: 30%;
 	width: 90%;
 	height: 200;
 }
@@ -965,12 +975,14 @@ form textarea {
 .text_ap .text1 {
 	margin-left: 10%;
 	margin-right: 5%;
+	font-size: 20px;
 }
 
 .orderflex {
 	display: block;
   width: 90%;
   margin-left: 5%;
+
 }
 
 .orderflex1 h2 {
@@ -987,10 +999,12 @@ form textarea {
 .orderflex1 .text2,
 .orderflex1 .text3  {
 	margin-left: 2%;
+	font-size: 20px;
 }
 
 .orderflex2 .text4 {
 	margin-left: 5%;
+	font-size: 20px;
 }
 
 .orderflex1 .deli h2 {
@@ -1034,6 +1048,7 @@ form textarea {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 }
+
 
 .text_location .map {
 	width: 100%;
@@ -1088,7 +1103,7 @@ form textarea {
 .b6,
 .b7,
 .b8 {
-	margin-left: 15%;
+	margin-left: 10%;
 }
 
 .grid_breads img {
@@ -1242,6 +1257,7 @@ form textarea {
   flex-direction: column;
   margin-right: 20%;
   margin-left: 20%;
+  margin-top: 15%;
   align-items: center;
 }
 
@@ -1301,7 +1317,7 @@ form textarea {
 
 .title_menu h1 {
   display: inline-block;
-  margin-left: 33%;
+  margin-left: 38%;
   margin-top: 7%;
 }
 
@@ -1316,12 +1332,12 @@ form textarea {
   margin: 0;
    text-align: center;
    margin-top: 40px;
-   font-size: 15px;
+   font-size: 20px;
 }
 
 .video {
 	width: 90%;
-	margin-top: 15%;
+	margin-top: 25%;
 	margin-left: 5%;
 }
 

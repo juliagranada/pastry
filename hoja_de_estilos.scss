@@ -32,7 +32,7 @@ $border_image: 3px solid #2b262d;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin-right: 10%;
-	margin-left: 10%
+	margin-left: 10%;
 	.nav_sections a {
 		font-size: 20px;
 		padding-left: 5px;
@@ -263,7 +263,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
-  font-family: 'Cinzel', serif;
+  font-family: 'Maitree', serif;
 }
 
 .menu_column1,
@@ -340,7 +340,7 @@ h1 {
 .orderflex1 {
   width: 97%;
   font-size: 25px;
-  margin-left:3%
+  margin-left:3%;
 	.orderflex1 h2 {
 		font-family: 'Cinzel', serif;
 	}
@@ -377,6 +377,7 @@ h1 {
 	.text_location .location {
 	  width: 100%;
 	  justify-content: flex-start;
+	  font-family: 'Maitree', serif;
 	}
 	.text_location li{
 		margin-bottom: 10px;
@@ -423,7 +424,7 @@ textarea {
 }
 
 form textarea {
-	height: 150px
+	height: 150px;
 }
 
 .form .send {
@@ -538,11 +539,10 @@ form textarea {
     "p3 p4"
     "p5 p6"
     "p7 p8";
-
 	.grid_pastries img {
 	  background-color: black;
 	  border: $border_image;
-	  margin-left: 25%
+	  margin-left: 25%;
 	}
 }
 .p1 { 
@@ -606,7 +606,7 @@ form textarea {
 	.grid_sandwiches img {
 	  background-color: black;
 	  border: $border_image;
-	  margin-left: 25%
+	  margin-left: 25%;
 	}
 }
 .s1 { 
@@ -670,7 +670,7 @@ form textarea {
 	.grid_cookies img {
 	  background-color: black;
 	  border: $border_image;
-	  margin-left: 25%
+	  margin-left: 25%;
 	}
 }
 .c1 { 
@@ -717,7 +717,7 @@ form textarea {
 .nav_sections {
 	width: 80%;
 	height: 50%;
-	margin-left: 3%;
+	margin-left: 12%;
 	.nav_sections a {
 		font-size: 15px;
 		padding-left: 10px;
@@ -734,6 +734,10 @@ form textarea {
 	  margin-left: 0%;
 	  margin-bottom: 0%;
 	}
+	.nav_sections .nav_bar ul a {
+	color: #928a96;
+	}
+											
 }
 .title1 {
  	width: 30%;
@@ -754,9 +758,13 @@ form textarea {
 .content p {
 	width: 100%;
 	line-height: 30px;
-	font-size: 17px;
+	font-size: 20px;
 	margin-right: 20%;
 	text-align: center;
+}
+
+.contenedor h1 {
+	margin-left: 10%;
 }
 
 .products_flex {
@@ -878,13 +886,13 @@ form textarea {
 
 .sub_title3 h2 {
 	margin-left: 0%;
-	margin-top: 25%;
+	margin-top: 10%;
 	text-decoration: underline;
 }
 
 .video  {
 	margin-left:5%;
-	margin-top: 40%;
+	margin-top: 30%;
 	width: 90%;
 	height: 200;
 }
@@ -906,6 +914,7 @@ form textarea {
 .text_ap .text1 {
 	margin-left: 10%;
 	margin-right: 5%;
+	font-size: 20px;
 }
 
 .orderflex {
@@ -934,6 +943,7 @@ form textarea {
 .orderflex1 .text2,
 .orderflex1 .text3  {
 	margin-left: 2%;
+	font-size: 20px;
 }
 
 .orderflex2 .text4 {
@@ -1028,7 +1038,7 @@ form textarea {
 .b6,
 .b7,
 .b8 {
-	margin-left: 15%;
+	margin-left: 10%;
 }
 
 
@@ -1180,6 +1190,7 @@ form textarea {
   flex-direction: column;
   margin-right: 20%;
   margin-left: 20%;
+  margin-top: 15%;
   align-items: center;
 }
 
@@ -1234,7 +1245,7 @@ form textarea {
 
 .title_menu h1 {
   display: inline-block;
-  margin-left: 33%;
+  margin-left: 38%;
   margin-top: 7%;
 }
 
@@ -1249,12 +1260,12 @@ form textarea {
   margin: 0;
    text-align: center;
    margin-top: 40px;
-   font-size: 15px;
+   font-size: 20px;
 }
 
 .video {
 	width: 90%;
-	margin-top: 15%;
+	margin-top: 25%;
 	margin-left: 5%;
 }
 
